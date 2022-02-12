@@ -1,4 +1,3 @@
-Makefile:
 all: compile link
 
 compile:
