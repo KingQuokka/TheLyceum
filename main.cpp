@@ -14,10 +14,12 @@ int main(int argc, char* argv[])
     sf::RenderWindow window(sf::VideoMode(wWidth, wHeight), "PLEASE WORK!");
     
     // creating shapes that will appear in the window 
-    sf::CircleShape circle(cRadius);         // creates cirlce with given radius 
-    circle.setFillColor(sf::Color::Green);   // set circle color 
-    circle.setPosition(300, 300);            // set cirlce starting position
-    float circleMoveSpeed = -0.05;           // sets movement speed  
+    sf::CircleShape circle(cRadius);            // creates cirlce with given radius 
+    circle.setFillColor(sf::Color::Green);      // set circle color 
+    circle.setPosition(200, 300);               // set cirlce starting position
+    float circleMoveSpeed = -0.05;              // sets initial movement speed
+    float circleMoveSpeedX = circleMoveSpeed;   // variable for x axis move on bounce 
+    float circleMoveSpeedY = circleMoveSpeed;   // variable for y axis move on bounce  
 
     // loads font to display text
     sf::Font myFont;
@@ -47,34 +49,23 @@ int main(int argc, char* argv[])
             if (event.type == sf::Event::Closed)
             {
                 window.close();
-            }
-
-            // keypress event trigger
-            if (event.type == sf::Event::KeyPressed)
-            {
-                // print which key was pressed to console
-                std::cout << "Key pressed with code = " << event.key.code << "\n";
-
-                // event when r is pressed
-                if (event.key.code == sf::Keyboard::R)
-                {
-                    // reverse the direction of the circle 
-                    circleMoveSpeed *= -1.0;
-                }
             }            
         }
+
         // bounce on boundry collisions
-        if(circle.getPosition() .x > 1600 - (cRadius * 2) || circle.getPosition() .y > 1200 - (cRadius *2))
+        if(circle.getPosition() .y > 1200 - (cRadius * 2) || circle.getPosition() .y < 0)
         {
-            circleMoveSpeed *= -1.0;
+            circleMoveSpeedY *= -1.0;
+            circle.setFillColor(sf::Color(rand() % 255, rand() % 255, rand() % 255));
         } 
-        if(circle.getPosition() .x < 0 || circle.getPosition() .y < 0)
+        else if(circle.getPosition() .x > 1600 - (cRadius * 2) || circle.getPosition() .x < 0)
         {
-            circleMoveSpeed *= -1.0;
+            circleMoveSpeedX *= -1.0;
+            circle.setFillColor(sf::Color(rand() % 255, rand() % 255, rand() % 255));
         }         
 
         // movement animation 
-        circle.setPosition(circle.getPosition() + sf::Vector2f(circleMoveSpeed, circleMoveSpeed));
+        circle.setPosition(circle.getPosition() + sf::Vector2f(circleMoveSpeedX, circleMoveSpeedY));
 
         // render functions
         window.clear();             // clear window
