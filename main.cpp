@@ -1,25 +1,29 @@
+// creats shapes that move within a window 
 #include <SFML/Graphics.hpp>
 #include <iostream>
 #include <fstream>
 
 int main(int argc, char* argv[])
 {
+    // variables 
+    int cRadius = 100;                        // set variable for cirlce radius 
+
     // creating a window for the shpaes 
     const int wWidth = 1600;                 // set window width
     const int wHeight = 1200;                // set window height 
     sf::RenderWindow window(sf::VideoMode(wWidth, wHeight), "PLEASE WORK!");
     
     // creating shapes that will appear in the window 
-    sf::CircleShape circle(100);            // creates cirlce with given radius 
+    sf::CircleShape circle(cRadius);         // creates cirlce with given radius 
     circle.setFillColor(sf::Color::Green);   // set circle color 
-    circle.setPosition(300, 300);           // set cirlce starting position
-    float circleMoveSpeed = -0.05;          // sets movement speed  
+    circle.setPosition(300, 300);            // set cirlce starting position
+    float circleMoveSpeed = -0.05;           // sets movement speed  
 
     // loads font to display text
     sf::Font myFont;
 
     // load font from file
-    if(!myFont.loadFromFile("xeros.ttf")) 
+    if(!myFont.loadFromFile("Roboto.ttf")) 
     {
         // error check
         std::cerr << "COULD NOT LOAD FONT!\n\n";
@@ -27,7 +31,7 @@ int main(int argc, char* argv[])
     } 
 
     // string, font, size
-    sf::Text text("Shape Mover", myFont, 60);
+    sf::Text text("SHAPE MOVER", myFont, 60);
         
     //  align text to bottom left corner
     text.setPosition(0, wHeight - (float)text.getCharacterSize());
@@ -57,8 +61,17 @@ int main(int argc, char* argv[])
                     // reverse the direction of the circle 
                     circleMoveSpeed *= -1.0;
                 }
-            }
+            }            
         }
+        // bounce on boundry collisions
+        if(circle.getPosition() .x > 1600 - (cRadius * 2) || circle.getPosition() .y > 1200 - (cRadius *2))
+        {
+            circleMoveSpeed *= -1.0;
+        } 
+        if(circle.getPosition() .x < 0 || circle.getPosition() .y < 0)
+        {
+            circleMoveSpeed *= -1.0;
+        }         
 
         // movement animation 
         circle.setPosition(circle.getPosition() + sf::Vector2f(circleMoveSpeed, circleMoveSpeed));
