@@ -1,27 +1,73 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
+#include <fstream>
 
 int main(int argc, char* argv[])
 {
     // creating a window for the shpaes 
-    const int wWidth = 800;
-    const int wHeight = 600;
+    const int wWidth = 1600;                 // set window width
+    const int wHeight = 1200;                // set window height 
     sf::RenderWindow window(sf::VideoMode(wWidth, wHeight), "PLEASE WORK!");
-    sf::CircleShape shape(100.f);
-    shape.setFillColor(sf::Color::Green);
+    
+    // creating shapes that will appear in the window 
+    sf::CircleShape circle(100);            // creates cirlce with given radius 
+    circle.setFillColor(sf::Color::Green);   // set circle color 
+    circle.setPosition(300, 300);           // set cirlce starting position
+    float circleMoveSpeed = -0.05;          // sets movement speed  
 
+    // loads font to display text
+    sf::Font myFont;
+
+    // load font from file
+    if(!myFont.loadFromFile("xeros.ttf")) 
+    {
+        // error check
+        std::cerr << "COULD NOT LOAD FONT!\n\n";
+        exit(-1);
+    } 
+
+    // string, font, size
+    sf::Text text("Shape Mover", myFont, 60);
+        
+    //  align text to bottom left corner
+    text.setPosition(0, wHeight - (float)text.getCharacterSize());
+
+    // main loop
     while (window.isOpen())
     {
+        // event handling
         sf::Event event;
         while (window.pollEvent(event))
         {
+            // window close event trigger
             if (event.type == sf::Event::Closed)
+            {
                 window.close();
+            }
+
+            // keypress event trigger
+            if (event.type == sf::Event::KeyPressed)
+            {
+                // print which key was pressed to console
+                std::cout << "Key pressed with code = " << event.key.code << "\n";
+
+                // event when r is pressed
+                if (event.key.code == sf::Keyboard::R)
+                {
+                    // reverse the direction of the circle 
+                    circleMoveSpeed *= -1.0;
+                }
+            }
         }
 
-        window.clear();
-        window.draw(shape);
-        window.display();
+        // movement animation 
+        circle.setPosition(circle.getPosition() + sf::Vector2f(circleMoveSpeed, circleMoveSpeed));
+
+        // render functions
+        window.clear();             // clear window
+        window.draw(circle);        // draw cirlce in current positon
+        window.draw(text);          // draw text to window 
+        window.display();           // diplay to window 
     }
 
     return 0;
