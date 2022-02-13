@@ -1,8 +1,12 @@
 #include <SFML/Graphics.hpp>
+#include <iostream>
 
-int main()
+int main(int argc, char* argv[])
 {
-    sf::RenderWindow window(sf::VideoMode(200, 200), "I AM THE GREATEST PROGRAMMER ALIVE!");
+    // creating a window for the shpaes 
+    const int wWidth = 800;
+    const int wHeight = 600;
+    sf::RenderWindow window(sf::VideoMode(wWidth, wHeight), "PLEASE WORK!");
     sf::CircleShape shape(100.f);
     shape.setFillColor(sf::Color::Green);
 
