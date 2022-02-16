@@ -29,6 +29,7 @@ int main(int argc, char* argv[])
     {
         // error check
         std::cerr << "COULD NOT LOAD FONT!\n\n";
+        system("pause");
         exit(-1);
     } 
 
@@ -53,12 +54,12 @@ int main(int argc, char* argv[])
         }
 
         // bounce on boundry collisions
-        if(circle.getPosition() .y > 1200 - (cRadius * 2) || circle.getPosition() .y < 0)
+        if(circle.getPosition() .y > wHeight - (cRadius * 2) || circle.getPosition() .y < 0)
         {
             circleMoveSpeedY *= -1.0;
             circle.setFillColor(sf::Color(rand() % 255, rand() % 255, rand() % 255));
         } 
-        else if(circle.getPosition() .x > 1600 - (cRadius * 2) || circle.getPosition() .x < 0)
+        else if(circle.getPosition() .x > wWidth - (cRadius * 2) || circle.getPosition() .x < 0)
         {
             circleMoveSpeedX *= -1.0;
             circle.setFillColor(sf::Color(rand() % 255, rand() % 255, rand() % 255));
