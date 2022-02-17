@@ -1,3 +1,4 @@
+// shapeMover.cpp
 // creats shapes that move within a window 
 #include <SFML/Graphics.hpp>
 #include <iostream>
@@ -6,18 +7,18 @@
 int main(int argc, char* argv[])
 {
     // variables 
-    int cRadius = 100;                        // set variable for cirlce radius 
+    int cRadius = 100;                          // set variable for cirlce radius 
 
     // creating a window for the shpaes 
-    const int wWidth = 1600;                 // set window width
-    const int wHeight = 1200;                // set window height 
+    const int wWidth = 2000;                    // set window width
+    const int wHeight = 1800;                   // set window height 
     sf::RenderWindow window(sf::VideoMode(wWidth, wHeight), "PLEASE WORK!");
     
     // creating shapes that will appear in the window 
     sf::CircleShape circle(cRadius);            // creates cirlce with given radius 
     circle.setFillColor(sf::Color::Green);      // set circle color 
     circle.setPosition(200, 300);               // set cirlce starting position
-    float circleMoveSpeed = -0.05;              // sets initial movement speed
+    float circleMoveSpeed = -0.30;              // sets initial movement speed
     float circleMoveSpeedX = circleMoveSpeed;   // variable for x axis move on bounce 
     float circleMoveSpeedY = circleMoveSpeed;   // variable for y axis move on bounce  
 
