@@ -3,11 +3,21 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
 #include <fstream>
+#include <vector>
+
+//struct RectangleConfig  { float X, Y, SX, SY; int W, H; };
+struct CircleConfig     { float X, Y, SX, SY; int CR; };
+//RectangleConfig         rectangles;
+CircleConfig            circles;
 
 int main(int argc, char* argv[])
 {
+    // read in configs from .txt  
+    std::ifstream fin("ShapeConfig.txt");
+    fin >> circles.X >> circles.Y >> circles.SX >> circles.SY >> circles.CR;
+    
     // variables 
-    int cRadius = 100;                          // set variable for cirlce radius 
+    int cRadius = circles.CR;                   // set variable for cirlce radius 
 
     // creating a window for the shpaes 
     const int wWidth = 2000;                    // set window width
@@ -17,10 +27,10 @@ int main(int argc, char* argv[])
     // creating shapes that will appear in the window 
     sf::CircleShape circle(cRadius);            // creates cirlce with given radius 
     circle.setFillColor(sf::Color::Green);      // set circle color 
-    circle.setPosition(200, 300);               // set cirlce starting position
+    circle.setPosition(circles.X, circles.Y);   // set cirlce starting position
     float circleMoveSpeed = -0.10;              // sets initial movement speed
-    float circleMoveSpeedX = circleMoveSpeed;   // variable for x axis move on bounce 
-    float circleMoveSpeedY = circleMoveSpeed;   // variable for y axis move on bounce  
+    float circleMoveSpeedX = circles.SX;        // variable for x axis move on bounce 
+    float circleMoveSpeedY = circles.SY;        // variable for y axis move on bounce  
 
     // loads font to display text
     sf::Font myFont;
