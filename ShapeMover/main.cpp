@@ -5,16 +5,15 @@
 #include <fstream>
 #include <vector>
 
-//struct RectangleConfig  { float X, Y, SX, SY; int W, H; };
 struct CircleConfig     { float X, Y, SX, SY; int CR; };
-//RectangleConfig         rectangles;
 CircleConfig            circles;
 
 int main(int argc, char* argv[])
 {
-    // read in configs from .txt  
+    // read in configs from ShapCongfig.txt  
     std::ifstream fin("ShapeConfig.txt");
     fin >> circles.X >> circles.Y >> circles.SX >> circles.SY >> circles.CR;
+
     
     // variables 
     int cRadius = circles.CR;                   // set variable for cirlce radius 
