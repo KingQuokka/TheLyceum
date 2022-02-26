@@ -14,6 +14,8 @@ int main(int argc, char* argv[])
     std::ifstream fin("ShapeConfig.txt");
     fin >> circles.X >> circles.Y >> circles.SX >> circles.SY >> circles.CR;
 
+    std::vector<int> circleVector;
+    
     
     // variables 
     int cRadius = circles.CR;                   // set variable for cirlce radius 
@@ -27,7 +29,6 @@ int main(int argc, char* argv[])
     sf::CircleShape circle(cRadius);            // creates cirlce with given radius 
     circle.setFillColor(sf::Color::Green);      // set circle color 
     circle.setPosition(circles.X, circles.Y);   // set cirlce starting position
-    float circleMoveSpeed = -0.10;              // sets initial movement speed
     float circleMoveSpeedX = circles.SX;        // variable for x axis move on bounce 
     float circleMoveSpeedY = circles.SY;        // variable for y axis move on bounce  
 
