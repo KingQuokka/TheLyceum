@@ -13,10 +13,7 @@ int main(int argc, char* argv[])
     // read in configs from ShapCongfig.txt  
     std::ifstream fin("ShapeConfig.txt");
     fin >> circles.X >> circles.Y >> circles.SX >> circles.SY >> circles.CR;
-
-    std::vector<int> circleVector;
-    
-    
+   
     // variables 
     int cRadius = circles.CR;                   // set variable for cirlce radius 
 
