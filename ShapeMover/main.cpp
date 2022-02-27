@@ -5,18 +5,21 @@
 #include <fstream>
 #include <vector>
 
+// class for circle shapes
 class Circle
 {
-    float   m_xPos;
-    float   m_yPos;
-    float   m_xSpeed;
-    float   m_ySpeed;
-    int     m_cRad;
-    int     m_cID;
+    float   m_xPos;     // x axis position
+    float   m_yPos;     // y axis position
+    float   m_xSpeed;   // x speed
+    float   m_ySpeed;   // y speed
+    int     m_cRad;     // radius
+    int     m_cID;      // circle ID
 public:
+    // default circle constructor
     Circle()
     {
     }
+    // circle constructor 
     Circle(float x, float y, float xS, float yS, int cR, int cID)
         : m_xPos  (x)
         , m_yPos  (y)
@@ -26,56 +29,60 @@ public:
         , m_cID   (cID)  
     {
     }
-    float getxPos()
+    float getxPos()     // returns x axis position
     {
         return m_xPos;
     }
-    float getyPos()
+    float getyPos()     // returns y axis position
     {
         return m_yPos;
     }
-    float getxSpeed()
+    float getxSpeed()   // returns speed on x axis
     {
         return m_xSpeed;
     }
-    float getySpeed()
+    float getySpeed()   // returns speed on y axis
     {
         return m_ySpeed;
     }
-    int getcRad()
+    int getcRad()       // returns circle radius
     {
         return m_cRad;
     }
-    int getcID()
+    int getcID()        // returns circle ID
     {
         return m_cID;
     }
-    void print()
+    void print()        // print for verification 
     {
         std::cout << m_cID << "\n";
     }
 };
 
+// class for all shapes
 class Shapes
 {    
+    // vector to hold circle shapes
     std::vector<Circle> m_circles;
+    // variable to hold shape type
     std::string         m_type;
 public:
-    
+    // shape type constructor 
     Shapes(const std::string& type)
         : m_type(type)
     {        
     }
+    // adds circles to Circle vector
     void addCircle(const Circle& c)
     {
         m_circles.push_back(c);
     }
-
+    // return cirlces in Circle vector 
     std::vector<Circle>& getCircles()
     {
         return m_circles;
     }
-
+    // gets shape paramaters from file and adds shape
     void addShapesFromFile(const std::string& filename)
     {
         std::ifstream fin(filename);
@@ -86,9 +93,11 @@ public:
         int   cR  = 0;  
         int   cID = 0;
 
+        // itterates throught each line in file
         while(fin >> x)
         fin >> y >> xS >> yS >> cR >> cID;
 
+        // adds circle 
         Circle c(x, y, xS, yS, cR, cID);
         addCircle(c);
     }
@@ -105,19 +114,19 @@ int main(int argc, char* argv[])
     {
 
         // variables 
-        int cRadius = c.getcRad();                   // set variable for cirlce radius 
+        int cRadius = c.getcRad();                   // cirlce radius 
 
         // creating a window for the shpaes 
-        const int wWidth = 2000;                    // set window width
-        const int wHeight = 1800;                   // set window height 
+        const int wWidth = 2000;                     // set window width
+        const int wHeight = 1800;                    // set window height 
         sf::RenderWindow window(sf::VideoMode(wWidth, wHeight), "PLEASE WORK!");
     
         // creating shapes that will appear in the window 
-        sf::CircleShape circle(cRadius);            // creates cirlce with given radius 
-        circle.setFillColor(sf::Color::Green);      // set circle color 
-        circle.setPosition(c.getxPos(), c.getyPos());   // set cirlce starting position
-        float circleMoveSpeedX = c.getxSpeed();        // variable for x axis move on bounce 
-        float circleMoveSpeedY = c.getySpeed();        // variable for y axis move on bounce  
+        sf::CircleShape circle(cRadius);              // cirlce with given radius 
+        circle.setFillColor(sf::Color::Green);        // circle color 
+        circle.setPosition(c.getxPos(), c.getyPos()); // cirlce starting position
+        float circleMoveSpeedX = c.getxSpeed();       // x axis move on bounce 
+        float circleMoveSpeedY = c.getySpeed();       // y axis move on bounce  
 
         // loads font to display text
         sf::Font myFont;
@@ -151,26 +160,34 @@ int main(int argc, char* argv[])
                 }            
             }
 
-            // bounce on boundry collisions
-            if(circle.getPosition() .y > wHeight - (cRadius * 2) || circle.getPosition() .y < 0)
+            // y boundary collisions
+            if(circle.getPosition() .y > wHeight - (cRadius * 2) 
+                || circle.getPosition() .y < 0)
             {
-                circleMoveSpeedY *= -1.0;
-                circle.setFillColor(sf::Color(rand() % 255, rand() % 255, rand() % 255));
+                // reveres direction on y axis and randomize color
+                circleMoveSpeedY *= -1.0; 
+                circle.setFillColor
+                    (sf::Color(rand() % 255, rand() % 255, rand() % 255));
             } 
-            else if(circle.getPosition() .x > wWidth - (cRadius * 2) || circle.getPosition() .x < 0)
+            // x boundary collision 
+            else if(circle.getPosition() .x > wWidth - (cRadius * 2) 
+                || circle.getPosition() .x < 0)
             {
+                // reverse direction on x axis and randomize color
                 circleMoveSpeedX *= -1.0;
-                circle.setFillColor(sf::Color(rand() % 255, rand() % 255, rand() % 255));
+                circle.setFillColor
+                    (sf::Color(rand() % 255, rand() % 255, rand() % 255));
             }         
 
             // movement animation 
-            circle.setPosition(circle.getPosition() + sf::Vector2f(circleMoveSpeedX, circleMoveSpeedY));
+            circle.setPosition(circle.getPosition() 
+            + sf::Vector2f(circleMoveSpeedX, circleMoveSpeedY));
 
             // render functions
-            window.clear();             // clear window
-            window.draw(circle);        // draw cirlce in current positon
-            window.draw(text);          // draw text to window 
-            window.display();           // diplay to window 
+            window.clear();       // clear window
+            window.draw(circle);  // draw cirlce in current positon
+            window.draw(text);    // draw text to window 
+            window.display();     // diplay to window 
         }
     };
     return 0;
