@@ -5,17 +5,107 @@
 #include <fstream>
 #include <vector>
 
-struct CircleConfig     { float X, Y, SX, SY; int CR; };
-CircleConfig            circles;
+class Circle
+{
+    float   m_xPos;
+    float   m_yPos;
+    float   m_xSpeed;
+    float   m_ySpeed;
+    int     m_cRad;
+    int     m_cID;
+public:
+    Circle()
+    {
+    }
+    Circle(float x, float y, float xS, float yS, int cR, int cID)
+        : m_xPos  (x)
+        , m_yPos  (y)
+        , m_xSpeed(xS)
+        , m_ySpeed(yS)
+        , m_cRad  (cR)
+        , m_cID   (cID)  
+    {
+    }
+    float getxPos()
+    {
+        return m_xPos;
+    }
+    float getyPos()
+    {
+        return m_yPos;
+    }
+    float getxSpeed()
+    {
+        return m_xSpeed;
+    }
+    float getySpeed()
+    {
+        return m_ySpeed;
+    }
+    int getcRad()
+    {
+        return m_cRad;
+    }
+    int getcID()
+    {
+        return m_cID;
+    }
+    void print()
+    {
+        std::cout << m_cID << "\n";
+    }
+};
+
+class Shapes
+{    
+    std::vector<Circle> m_circles;
+    std::string         m_type;
+public:
+    
+    Shapes(const std::string& type)
+        : m_type(type)
+    {        
+    }
+    void addCircle(const Circle& c)
+    {
+        m_circles.push_back(c);
+    }
+
+    std::vector<Circle>& getCircles()
+    {
+        return m_circles;
+    }
+
+    void addShapesFromFile(const std::string& filename)
+    {
+        std::ifstream fin(filename);
+        float x   = 0;
+        float y   = 0;
+        float xS  = 0;
+        float yS  = 0;
+        int   cR  = 0;  
+        int   cID = 0;
+
+        while(fin >> x)
+        fin >> y >> xS >> yS >> cR >> cID;
+
+        Circle c(x, y, xS, yS, cR, cID);
+        addCircle(c);
+    }
+    
+};
 
 int main(int argc, char* argv[])
 {
-    // read in configs from ShapCongfig.txt  
-    std::ifstream fin("ShapeConfig.txt");
-    fin >> circles.X >> circles.Y >> circles.SX >> circles.SY >> circles.CR;
-   
+       
+    Shapes c("Circles");
+
+    c.addShapesFromFile("ShapeConfig.txt");
+    c.print();
+    
+    /*
     // variables 
-    int cRadius = circles.CR;                   // set variable for cirlce radius 
+    int cRadius = circle.CR;                   // set variable for cirlce radius 
 
     // creating a window for the shpaes 
     const int wWidth = 2000;                    // set window width
