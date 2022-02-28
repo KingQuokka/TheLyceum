@@ -189,6 +189,6 @@ int main(int argc, char* argv[])
             window.draw(text);    // draw text to window 
             window.display();     // diplay to window 
         }
-    };
+    }
     return 0;
 }
