@@ -5,28 +5,28 @@
 #include <fstream>
 #include <vector>
 
-// class for circle shapes
-class Circle
+// class for polygon shapes
+class Polygon
 {
     float   m_xPos;     // x axis position
     float   m_yPos;     // y axis position
     float   m_xSpeed;   // x speed
     float   m_ySpeed;   // y speed
-    int     m_cRad;     // radius
-    int     m_cID;      // circle ID
+    int     m_pRad;     // radius
+    int     m_points;   // circle ID
 public:
     // default circle constructor
-    Circle()
+    Polygon()
     {
     }
     // circle constructor 
-    Circle(float x, float y, float xS, float yS, int cR, int cID)
-        : m_xPos  (x)
-        , m_yPos  (y)
-        , m_xSpeed(xS)
-        , m_ySpeed(yS)
-        , m_cRad  (cR)
-        , m_cID   (cID)  
+    Polygon(float x, float y, float xS, float yS, int pR, int p)
+        : m_xPos   (x)
+        , m_yPos   (y)
+        , m_xSpeed (xS)
+        , m_ySpeed (yS)
+        , m_pRad   (pR)
+        , m_points (p)  
     {
     }
     float getxPos()     // returns x axis position
@@ -45,25 +45,21 @@ public:
     {
         return m_ySpeed;
     }
-    int getcRad()       // returns circle radius
+    int getpRad()       // returns circle radius
     {
-        return m_cRad;
+        return m_pRad;
     }
-    int getcID()        // returns circle ID
+    int getp()          // returns circle ID
     {
-        return m_cID;
-    }
-    void print()        // print for verification 
-    {
-        std::cout << m_cID << "\n";
-    }
+        return m_points;
+    }    
 };
 
 // class for all shapes
 class Shapes
 {    
     // vector to hold circle shapes
-    std::vector<Circle> m_circles;
+    std::vector<Polygon> m_polygon;
     // variable to hold shape type
     std::string         m_type;
 public:
@@ -73,14 +69,14 @@ public:
     {        
     }
     // adds circles to Circle vector
-    void addCircle(const Circle& c)
+    void addPolygon(const Polygon &polys)
     {
-        m_circles.push_back(c);
+        m_polygon.push_back(polys);
     }
     // return cirlces in Circle vector 
-    std::vector<Circle>& getCircles()
+    std::vector<Polygon>& getPolygons()
     {
-        return m_circles;
+        return m_polygon;
     }
     // gets shape paramaters from file and adds shape
     void addShapesFromFile(const std::string& filename)
@@ -90,43 +86,38 @@ public:
         float y   = 0;
         float xS  = 0;
         float yS  = 0;
-        int   cR  = 0;  
-        int   cID = 0;
+        int   pR  = 0;  
+        int   p   = 0;
 
         // itterates throught each line in file
         while(fin >> x)
-        fin >> y >> xS >> yS >> cR >> cID;
+        fin >> y >> xS >> yS >> pR >> p;
 
         // adds circle 
-        Circle c(x, y, xS, yS, cR, cID);
-        addCircle(c);
-    }
-    
+        Polygon polys(x, y, xS, yS, pR, p);
+        addPolygon(polys);
+    }    
 };
 
 int main(int argc, char* argv[])
 {
        
-    Shapes c("Circles");
-    c.addShapesFromFile("ShapeConfig.txt");
+    Shapes polys("Polygons");
+    polys.addShapesFromFile("ShapeConfig.txt");
     
-    for (Circle& c : c.getCircles())
-    {
-
-        // variables 
-        int cRadius = c.getcRad();                   // cirlce radius 
-
+    for (auto & polys : polys.getPolygons())
+    {                
         // creating a window for the shpaes 
         const int wWidth = 2000;                     // set window width
         const int wHeight = 1800;                    // set window height 
         sf::RenderWindow window(sf::VideoMode(wWidth, wHeight), "PLEASE WORK!");
     
         // creating shapes that will appear in the window 
-        sf::CircleShape circle(cRadius);              // cirlce with given radius 
-        circle.setFillColor(sf::Color::Green);        // circle color 
-        circle.setPosition(c.getxPos(), c.getyPos()); // cirlce starting position
-        float circleMoveSpeedX = c.getxSpeed();       // x axis move on bounce 
-        float circleMoveSpeedY = c.getySpeed();       // y axis move on bounce  
+        sf::CircleShape circle(polys.getpRad(), polys.getp()); // cirlce with given radius 
+        circle.setFillColor(sf::Color::Green);                 // circle color 
+        circle.setPosition(polys.getxPos(), polys.getyPos());  // cirlce starting position
+        float circleMoveSpeedX = polys.getxSpeed();            // x axis move on bounce 
+        float circleMoveSpeedY = polys.getySpeed();            // y axis move on bounce  
 
         // loads font to display text
         sf::Font myFont;
@@ -161,7 +152,7 @@ int main(int argc, char* argv[])
             }
 
             // y boundary collisions
-            if(circle.getPosition() .y > wHeight - (cRadius * 2) 
+            if(circle.getPosition() .y > wHeight - (polys.getpRad() * 2) 
                 || circle.getPosition() .y < 0)
             {
                 // reveres direction on y axis and randomize color
@@ -170,7 +161,7 @@ int main(int argc, char* argv[])
                     (sf::Color(rand() % 255, rand() % 255, rand() % 255));
             } 
             // x boundary collision 
-            else if(circle.getPosition() .x > wWidth - (cRadius * 2) 
+            else if(circle.getPosition() .x > wWidth - (polys.getpRad() * 2) 
                 || circle.getPosition() .x < 0)
             {
                 // reverse direction on x axis and randomize color
