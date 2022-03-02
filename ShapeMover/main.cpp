@@ -55,33 +55,11 @@ public:
     }    
 };
 
-// class for all shapes
-class Shapes
-{    
-    // vector to hold circle shapes
-    std::vector<Polygon> m_polygon;
-    // variable to hold shape type
-    std::string         m_type;
-public:
-    // shape type constructor 
-    Shapes(const std::string& type)
-        : m_type(type)
-    {        
-    }
-    // adds circles to Circle vector
-    void addPolygon(const Polygon &polys)
-    {
-        m_polygon.push_back(polys);
-    }
-    // return cirlces in Circle vector 
-    std::vector<Polygon>& getPolygons()
-    {
-        return m_polygon;
-    }
-    // gets shape paramaters from file and adds shape
-    void addShapesFromFile(const std::string& filename)
-    {
-        std::ifstream fin(filename);
+int main(int argc, char* argv[])
+{
+       
+    std::vector<Polygon> polysVector;
+    std::ifstream fin("ShapeConfig.txt");
         float x   = 0;
         float y   = 0;
         float xS  = 0;
@@ -89,40 +67,25 @@ public:
         int   pR  = 0;  
         int   p   = 0;
 
-        // itterates throught each line in file
-        while(fin >> x)
+    // itterates throught each line in file
+    while(fin >> x)
+    {
         fin >> y >> xS >> yS >> pR >> p;
 
         // adds circle 
         Polygon polys(x, y, xS, yS, pR, p);
-        addPolygon(polys);
-    }    
-};
-
-int main(int argc, char* argv[])
-{
-       
-    Shapes polys("Polygons");
-    polys.addShapesFromFile("ShapeConfig.txt");
+        polysVector.push_back(polys);
+    }
     
-    for (auto & polys : polys.getPolygons())
-    {                
-        // creating a window for the shpaes 
+    // creating a window for the shpaes 
         const int wWidth = 2000;                     // set window width
         const int wHeight = 1800;                    // set window height 
         sf::RenderWindow window(sf::VideoMode(wWidth, wHeight), "PLEASE WORK!");
     
-        // creating shapes that will appear in the window 
-        sf::CircleShape circle(polys.getpRad(), polys.getp()); // cirlce with given radius 
-        circle.setFillColor(sf::Color::Green);                 // circle color 
-        circle.setPosition(polys.getxPos(), polys.getyPos());  // cirlce starting position
-        float circleMoveSpeedX = polys.getxSpeed();            // x axis move on bounce 
-        float circleMoveSpeedY = polys.getySpeed();            // y axis move on bounce  
-
-        // loads font to display text
+    // loads font to display text
         sf::Font myFont;
-
-        // load font from file
+    
+    // load font from file
         if(!myFont.loadFromFile("Roboto.ttf")) 
         {
             // error check
@@ -136,50 +99,68 @@ int main(int argc, char* argv[])
         
         // align text to bottom left corner
         text.setPosition(0, wHeight - (float)text.getCharacterSize());
+    
+    
+     
+
+        
+
+       
 
         // main loop
         while (window.isOpen())
         {
-            // event handling
-            sf::Event event;
-            while (window.pollEvent(event))
-            {
-                // window close event trigger
-                if (event.type == sf::Event::Closed)
+            for (int i = 0; i < polysVector.size(); i++)
+            {    
+                // creating shapes that will appear in the window 
+                sf::CircleShape circle(polysVector[i].getpRad(), polysVector[i].getp()); // cirlce with given radius 
+                circle.setFillColor(sf::Color::Green);                 // circle color 
+                circle.setPosition(polysVector[i].getxPos(),polysVector[i].getyPos());  // cirlce starting position
+                float circleMoveSpeedX = polysVector[i].getxSpeed();            // x axis move on bounce 
+                float circleMoveSpeedY = polysVector[i].getySpeed();            // y axis move on bounce   
+                     
+            
+                // event handling
+                sf::Event event;
+                while (window.pollEvent(event))
                 {
-                    window.close();
-                }            
+                    // window close event trigger
+                    if (event.type == sf::Event::Closed)
+                    {
+                        window.close();
+                    }            
+                }
+            
+                // y boundary collisions
+                if(circle.getPosition() .y > wHeight - (polysVector[i].getpRad() * 2) 
+                    || circle.getPosition() .y < 0)
+                {
+                    // reveres direction on y axis and randomize color
+                    circleMoveSpeedY *= -1.0; 
+                    circle.setFillColor
+                        (sf::Color(rand() % 255, rand() % 255, rand() % 255));
+                } 
+            
+                // x boundary collision 
+                else if(circle.getPosition() .x > wWidth - (polysVector[i].getpRad() * 2) 
+                    || circle.getPosition() .x < 0)
+                {
+                    // reverse direction on x axis and randomize color
+                    circleMoveSpeedX *= -1.0;
+                    circle.setFillColor
+                        (sf::Color(rand() % 255, rand() % 255, rand() % 255));
+                }         
+            
+                // movement animation 
+                circle.setPosition(circle.getPosition() 
+                    + sf::Vector2f(circleMoveSpeedX, circleMoveSpeedY));
+            
+                // render functions
+                //window.clear();       // clear window
+                window.draw(circle);  // draw cirlce in current positon
+                window.draw(text);    // draw text to window 
+                window.display();     // diplay to window 
             }
-
-            // y boundary collisions
-            if(circle.getPosition() .y > wHeight - (polys.getpRad() * 2) 
-                || circle.getPosition() .y < 0)
-            {
-                // reveres direction on y axis and randomize color
-                circleMoveSpeedY *= -1.0; 
-                circle.setFillColor
-                    (sf::Color(rand() % 255, rand() % 255, rand() % 255));
-            } 
-            // x boundary collision 
-            else if(circle.getPosition() .x > wWidth - (polys.getpRad() * 2) 
-                || circle.getPosition() .x < 0)
-            {
-                // reverse direction on x axis and randomize color
-                circleMoveSpeedX *= -1.0;
-                circle.setFillColor
-                    (sf::Color(rand() % 255, rand() % 255, rand() % 255));
-            }         
-
-            // movement animation 
-            circle.setPosition(circle.getPosition() 
-            + sf::Vector2f(circleMoveSpeedX, circleMoveSpeedY));
-
-            // render functions
-            window.clear();       // clear window
-            window.draw(circle);  // draw cirlce in current positon
-            window.draw(text);    // draw text to window 
-            window.display();     // diplay to window 
         }
-    }
     return 0;
 }
