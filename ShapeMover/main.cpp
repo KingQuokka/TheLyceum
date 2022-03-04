@@ -5,11 +5,43 @@
 #include <fstream>
 #include <vector>
 
+class PolygonMovement
+{
+    float m_xSpeed;
+    float m_ySpeed;
+public:
+    PolygonMovement()
+    {        
+    }
+    PolygonMovement(float xSpeed, float ySpeed)
+        : m_xSpeed(xSpeed)
+        , m_ySpeed(ySpeed)
+    {        
+    }    
+    float setxSpeed(float xS)
+    {
+        m_xSpeed = xS;
+    }
+    float setySpeed(float yS)
+    {
+        m_ySpeed = yS;
+    }
+    float getxSpeed()
+    {
+        return m_xSpeed;
+    }
+    float getySpeed()
+    {
+        return m_xSpeed;
+    }
+};
 
 int main(int argc, char* argv[])
 {
     sf::CircleShape polygon;                // variable for shapes
     std::vector<sf::CircleShape> poly;      // vector to hold polygons
+    PolygonMovement pMove;
+    std::vector<PolygonMovement> polySpeeds;
     std::ifstream fin("ShapeConfig.txt");   // polygon configurations
         float x          = 0;               // point on x axis
         float y          = 0;               // point on y axis
@@ -25,10 +57,13 @@ int main(int argc, char* argv[])
         polygon.setPosition  (x,y);
         polygon.setFillColor (sf::Color::Green);
         polygon.setRadius    (polyRadius);
-        xSpeed;                             // how do I add this to the polygon pushback?
-        ySpeed;                             // x and y speed are not changing per polygon 
+        pMove.setxSpeed      (xSpeed);
+        pMove.setySpeed      (ySpeed);
+        //xSpeed;                             // how do I add this to the polygon pushback?
+        //ySpeed;                             // x and y speed are not changing per polygon 
         polygon.setPointCount(polyPoints);
         poly.push_back       (polygon);
+        polySpeeds.push_back (pMove);
     }   
     // creating a window for the shpaes 
     const int wWidth  = 2000;               // set window width
@@ -74,7 +109,7 @@ int main(int argc, char* argv[])
                 || poly[i].getPosition() .y < 0)
             {
                 // reveres direction on y axis and randomize color
-                ySpeed *= -1.0; 
+                polySpeeds[i].setySpeed(ySpeed *= -1.0); 
                 poly[i].setFillColor
                     (sf::Color(rand() % 255, rand() % 255, rand() % 255));
             } 
@@ -83,13 +118,13 @@ int main(int argc, char* argv[])
                 || poly[i].getPosition() .x < 0)
             {
                 // reverse direction on x axis and randomize color
-                xSpeed *= -1.0;
+                polySpeeds[i].setxSpeed(xSpeed *= -1.0);
                 poly[i].setFillColor
                     (sf::Color(rand() % 255, rand() % 255, rand() % 255));
             }               
             // movement animation 
             poly[i].setPosition(poly[i].getPosition() 
-            + sf::Vector2f(xSpeed, ySpeed));
+            + sf::Vector2f(polySpeeds[i].getxSpeed(), polySpeeds[i].getySpeed()));
             window.draw(poly[i]);  // draw cirlce in current positon
             }
             window.draw(text);    // draw text to window 
