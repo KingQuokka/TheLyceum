@@ -32,7 +32,7 @@ public:
     }
     float getySpeed()
     {
-        return m_xSpeed;
+        return m_ySpeed;
     }
 };
 
