@@ -58,9 +58,7 @@ int main(int argc, char* argv[])
         polygon.setFillColor (sf::Color::Green);
         polygon.setRadius    (polyRadius);
         pMove.setxSpeed      (xSpeed);
-        pMove.setySpeed      (ySpeed);
-        //xSpeed;                             // how do I add this to the polygon pushback?
-        //ySpeed;                             // x and y speed are not changing per polygon 
+        pMove.setySpeed      (ySpeed);        
         polygon.setPointCount(polyPoints);
         poly.push_back       (polygon);
         polySpeeds.push_back (pMove);
