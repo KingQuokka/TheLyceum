@@ -38,17 +38,17 @@ public:
 
 int main(int argc, char* argv[])
 {
-    sf::CircleShape polygon;                // variable for shapes
-    std::vector<sf::CircleShape> poly;      // vector to hold polygons
-    PolygonMovement pMove;
-    std::vector<PolygonMovement> polySpeeds;
-    std::ifstream fin("ShapeConfig.txt");   // polygon configurations
-        float x          = 0;               // point on x axis
-        float y          = 0;               // point on y axis
-        float xSpeed     = 0;               // speed on x axis
-        float ySpeed     = 0;               // speed on y axis
-        int   polyRadius = 0;               // polygon radius
-        int   polyPoints = 0;               // number of points on polygon
+    sf::CircleShape polygon;                 // variable for shapes
+    std::vector<sf::CircleShape> poly;       // vector to hold polygons
+    PolygonMovement pMove;                   // velocity variable
+    std::vector<PolygonMovement> polySpeeds; // vector to hols velocities
+    std::ifstream fin("ShapeConfig.txt");    // polygon configurations
+        float x          = 0;                // point on x axis
+        float y          = 0;                // point on y axis
+        float xSpeed     = 0;                // speed on x axis
+        float ySpeed     = 0;                // speed on y axis
+        int   polyRadius = 0;                // polygon radius
+        int   polyPoints = 0;                // number of points on polygon
         
     // reads in polygon configurations and pushes them to poly vector 
     while(fin >> x)
@@ -60,12 +60,12 @@ int main(int argc, char* argv[])
         pMove.setxSpeed      (xSpeed);
         pMove.setySpeed      (ySpeed);        
         polygon.setPointCount(polyPoints);
-        poly.push_back       (polygon);
-        polySpeeds.push_back (pMove);
+        poly.push_back       (polygon);      // push polygon to poly vector
+        polySpeeds.push_back (pMove);        // push velocity to polySpeeds vector
     }   
     // creating a window for the shpaes 
-    const int wWidth  = 2000;               // set window width
-    const int wHeight = 1800;               // set window height 
+    const int wWidth  = 2000;                // set window width
+    const int wHeight = 1800;                // set window height 
     sf::RenderWindow window(sf::VideoMode(wWidth, wHeight), "PLEASE WORK!");
        
     // loads font to display text
@@ -98,7 +98,7 @@ int main(int argc, char* argv[])
                 window.close();
             }            
         }
-        
+        // iterate through all polygons in poly vector
         for(int i = 0; i < poly.size(); i++)
         {
             // y boundary collisions
@@ -125,13 +125,15 @@ int main(int argc, char* argv[])
         }
             
         // render functions
-        window.clear();        // clear window
+        window.clear();            // clear window
+        
+        // iterate and draw all polygons in poly vector
         for (int i = 0; i < poly.size(); i++)
         {
             window.draw(poly[i]);  // draw cirlce in current positon
         }
-        window.draw(text);     // draw text to window 
-        window.display();      // diplay to window 
+        window.draw(text);         // draw text to window 
+        window.display();          // diplay to window 
     }    
     return 0;
 }
