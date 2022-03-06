@@ -98,8 +98,7 @@ int main(int argc, char* argv[])
                 window.close();
             }            
         }
-        // render functions
-        window.clear();       // clear window
+        
         for(int i = 0; i < poly.size(); i++)
         {
             // y boundary collisions
@@ -123,10 +122,16 @@ int main(int argc, char* argv[])
             // movement animation 
             poly[i].setPosition(poly[i].getPosition() 
             + sf::Vector2f(polySpeeds[i].getxSpeed(), polySpeeds[i].getySpeed()));
+        }
+            
+        // render functions
+        window.clear();        // clear window
+        for (int i = 0; i < poly.size(); i++)
+        {
             window.draw(poly[i]);  // draw cirlce in current positon
-            }
-            window.draw(text);    // draw text to window 
-            window.display();     // diplay to window 
-        }    
+        }
+        window.draw(text);     // draw text to window 
+        window.display();      // diplay to window 
+    }    
     return 0;
 }
