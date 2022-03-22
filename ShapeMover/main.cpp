@@ -100,7 +100,7 @@ int main(int argc, char* argv[])
         }
         // iterate through all polygons in poly vector
         for(int i = 0; i < poly.size(); i++)
-        {
+        {            
             // y boundary collisions
             if(poly[i].getPosition() .y > wHeight - (poly[i].getRadius() * 2) 
                 || poly[i].getPosition() .y < 0)
@@ -128,9 +128,9 @@ int main(int argc, char* argv[])
         window.clear();            // clear window
         
         // iterate and draw all polygons in poly vector
-        for (int i = 0; i < poly.size(); i++)
+        for (auto it : poly)
         {
-            window.draw(poly[i]);  // draw cirlce in current positon
+            window.draw(it);       // "draw it" draw polygons in current positon 
         }
         window.draw(text);         // draw text to window 
         window.display();          // diplay to window 
