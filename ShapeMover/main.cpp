@@ -111,7 +111,7 @@ int main(int argc, char* argv[])
                     (sf::Color(rand() % 255, rand() % 255, rand() % 255));
             } 
             // x boundary collision 
-            else if(poly[i].getPosition() .x > wWidth - (poly[i].getRadius() * 2) 
+            if(poly[i].getPosition() .x > wWidth - (poly[i].getRadius() * 2) 
                 || poly[i].getPosition() .x < 0)
             {
                 // reverse direction on x axis and randomize color
