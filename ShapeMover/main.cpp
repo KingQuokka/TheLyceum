@@ -110,6 +110,7 @@ int main(int argc, char* argv[])
                 poly[i].setFillColor
                     (sf::Color(rand() % 255, rand() % 255, rand() % 255));
             } 
+            
             // x boundary collision 
             if(poly[i].getPosition() .x > wWidth - (poly[i].getRadius() * 2) 
                 || poly[i].getPosition() .x < 0)
@@ -119,6 +120,7 @@ int main(int argc, char* argv[])
                 poly[i].setFillColor
                     (sf::Color(rand() % 255, rand() % 255, rand() % 255));
             }               
+            
             // movement animation 
             poly[i].setPosition(poly[i].getPosition() 
             + sf::Vector2f(polySpeeds[i].getxSpeed(), polySpeeds[i].getySpeed()));
