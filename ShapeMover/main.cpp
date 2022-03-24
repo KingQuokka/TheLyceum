@@ -41,7 +41,7 @@ int main(int argc, char* argv[])
     sf::CircleShape polygon;                 // variable for shapes
     std::vector<sf::CircleShape> poly;       // vector to hold polygons
     PolygonMovement pMove;                   // velocity variable
-    std::vector<PolygonMovement> polySpeeds; // vector to hols velocities
+    std::vector<PolygonMovement> polySpeeds; // vector to hold velocities
     std::ifstream fin("ShapeConfig.txt");    // polygon configurations
         float x          = 0;                // point on x axis
         float y          = 0;                // point on y axis
@@ -106,7 +106,7 @@ int main(int argc, char* argv[])
                 || poly[i].getPosition() .y < 0)
             {
                 // reveres direction on y axis and randomize color
-                polySpeeds[i].setySpeed(ySpeed *= -1.0); 
+                polySpeeds[i].setySpeed(polySpeeds[i].getySpeed() * -1.0); 
                 poly[i].setFillColor
                     (sf::Color(rand() % 255, rand() % 255, rand() % 255));
             } 
@@ -116,7 +116,7 @@ int main(int argc, char* argv[])
                 || poly[i].getPosition() .x < 0)
             {
                 // reverse direction on x axis and randomize color
-                polySpeeds[i].setxSpeed(xSpeed *= -1.0);
+                polySpeeds[i].setxSpeed(polySpeeds[i].getxSpeed() * -1.0);
                 poly[i].setFillColor
                     (sf::Color(rand() % 255, rand() % 255, rand() % 255));
             }               
