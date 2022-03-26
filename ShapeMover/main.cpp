@@ -66,7 +66,7 @@ int main(int argc, char* argv[])
     // creating a window for the shpaes 
     const int wWidth  = 2000;                // set window width
     const int wHeight = 1800;                // set window height 
-    sf::RenderWindow window(sf::VideoMode(wWidth, wHeight), "PLEASE WORK!");
+    sf::RenderWindow window(sf::VideoMode(wWidth, wHeight), "SHAPE MOVER WORKS!");
        
     // loads font to display text
     sf::Font myFont;
