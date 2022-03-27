@@ -1,6 +1,7 @@
 // Pong.cpp : This file contains the 'main' function. Program execution begins and ends there.
 
 #include "Bat.h"
+#include "Ball.h"
 #include  <sstream>
 #include <cstdlib>
 #include <SFML/Graphics.hpp>
@@ -18,6 +19,9 @@ int main()
 
 	// Create a bat at the bottom center of the screen
 	Bat bat(1920 / 2, 1080 - 20);
+
+	// Create a ball
+	Ball ball(1920 / 2, 0);
 
 	// Create a Text object called HUD
 	Text hud;
@@ -82,11 +86,55 @@ int main()
 		// Update the delta time
 		Time dt = clock.restart();
 		bat.update(dt);
+		ball.update(dt);
 
 		// Update the HUD text
 		std::stringstream ss;
 		ss << "Score: " << score << " Live: " << lives;
 		hud.setString(ss.str());
+
+		// Handle ball hitting the bottom
+		if (ball.getPosition().top > window.getSize().y)
+		{
+			// Reverse the ball direction
+			ball.reboundBottom();
+
+			// Remove a life
+			lives--;
+
+			// Check for zero lives
+			if (lives < 1)
+			{
+				// Reset the score
+				score = 0;
+
+				// Reset the lives
+				lives = 3;
+			}
+		}
+
+		// Handle the ball hitting the top
+		if (ball.getPosition().top < 0)
+		{
+			ball.reboundBatOrTop();
+
+			// Add a point to the players score
+			score++;
+		}
+
+		// Handle the ball hitting the sides
+		if (ball.getPosition().left < 0 || ball.getPosition().left 
+			+ ball.getPosition().width > window.getSize().x)
+		{
+			ball.reboundSides();
+		}
+
+		// Handle the ball hitting the bat
+		if (ball.getPosition().intersects(bat.getPosition()))
+		{
+			// Hit detected so reverse the ball and score a point
+			ball.reboundBatOrTop();
+		}
 
 		/*
 		 * *************************
@@ -97,6 +145,7 @@ int main()
 		window.clear();
 		window.draw(hud);
 		window.draw(bat.getShape());
+		window.draw(ball.getShape());
 		window.display();
 	}
 	return 0;
