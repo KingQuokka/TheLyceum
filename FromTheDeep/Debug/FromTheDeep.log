@@ -1,10 +1,13 @@
 ﻿  FromTheDeep.cpp
-C:\Users\Jonat\Desktop\TheLyceum\FromTheDeep\FromTheDeep.cpp(106,30): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Jonat\Desktop\TheLyceum\FromTheDeep\FromTheDeep.cpp(110,17): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-C:\Users\Jonat\Desktop\TheLyceum\FromTheDeep\FromTheDeep.cpp(134,26): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Jonat\Desktop\TheLyceum\FromTheDeep\FromTheDeep.cpp(137,17): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-C:\Users\Jonat\Desktop\TheLyceum\FromTheDeep\FromTheDeep.cpp(159,26): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Jonat\Desktop\TheLyceum\FromTheDeep\FromTheDeep.cpp(162,17): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-C:\Users\Jonat\Desktop\TheLyceum\FromTheDeep\FromTheDeep.cpp(183,26): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Jonat\Desktop\TheLyceum\FromTheDeep\FromTheDeep.cpp(186,17): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\Jonat\Desktop\TheLyceum\FromTheDeep\FromTheDeep.cpp(267,34): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Jonat\Desktop\TheLyceum\FromTheDeep\FromTheDeep.cpp(292,34): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Jonat\Desktop\TheLyceum\FromTheDeep\FromTheDeep.cpp(346,31): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Jonat\Desktop\TheLyceum\FromTheDeep\FromTheDeep.cpp(350,18): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\Jonat\Desktop\TheLyceum\FromTheDeep\FromTheDeep.cpp(374,27): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Jonat\Desktop\TheLyceum\FromTheDeep\FromTheDeep.cpp(377,18): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\Jonat\Desktop\TheLyceum\FromTheDeep\FromTheDeep.cpp(399,27): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Jonat\Desktop\TheLyceum\FromTheDeep\FromTheDeep.cpp(402,18): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\Jonat\Desktop\TheLyceum\FromTheDeep\FromTheDeep.cpp(423,27): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Jonat\Desktop\TheLyceum\FromTheDeep\FromTheDeep.cpp(426,18): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\Jonat\Desktop\TheLyceum\FromTheDeep\FromTheDeep.cpp(452,18): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
   FromTheDeep.vcxproj -> C:\Users\Jonat\Desktop\TheLyceum\FromTheDeep\Debug\FromTheDeep.exe
