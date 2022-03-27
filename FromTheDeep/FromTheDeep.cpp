@@ -539,12 +539,12 @@ int main()
 
 		// Draw the player
 		window.draw(spritePlayer);
+		
+		// Draw the flying log
+		window.draw(spriteLog);
 
 		// Draw the axe
 		window.draw(spriteAxe);
-
-		// Draw the flying log
-		window.draw(spriteLog);
 
 		// Draw the gravestone
 		window.draw(spriteRIP);
