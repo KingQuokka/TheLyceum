@@ -2,6 +2,7 @@
 
 #include <SFML/Graphics.hpp>
 #include "Player.h"
+#include "ZombieArena.h"
 
 using namespace sf;
 
@@ -41,6 +42,13 @@ int main()
 
 	// The boundaries of the arena
 	IntRect arena;
+
+	// Create the background
+	VertexArray background;
+
+	// Load the texture for our background vertex array
+	Texture textureBackground;
+	textureBackground.loadFromFile("graphics/background_sheet.png");
 
 	// The main loop
 	while (window.isOpen())
@@ -180,9 +188,9 @@ int main()
 				arena.left   = 0;
 				arena.top    = 0;
 
-				// We will modify this line of code later
-				int tileSize = 50;
-
+				// Pass vertex array by reference to createBackground function
+				int tileSize = createBackground(background, arena);
+				
 				// Spawn the player in the middle of the arena
 				player.spawn(arena, resolution, tileSize);
 
@@ -239,6 +247,9 @@ int main()
 
 			// Set mainView to be displayed in window and draw everything related to it
 			window.setView(mainView);
+
+			// Draw the background
+			window.draw(background, &textureBackground);
 
 			// Draw the player
 			window.draw(player.getSprite());
