@@ -4,6 +4,8 @@
 #include "Player.h"
 #include "ZombieArena.h"
 #include "TextureHolder.h"
+#include "Bullet.h"
+#include "Pickup.h" 
 
 using namespace sf;
 
@@ -60,6 +62,29 @@ int main()
 
 	Zombie* zombies = nullptr;
 
+	// 100 bullets should do
+	Bullet bullets[100];
+
+	int   currentBullet = 0;
+	int   bulletsSpare  = 24;
+	int   bulletsInClip = 6;
+	int	  clipSize      = 6;
+	float fireRate      = 1;
+
+	// When was teh fire button last pressed
+	Time lastPressed;
+
+	// Hide the mouse pointer and replace with cross-hair
+	window.setMouseCursorVisible(true);
+	Sprite spriteCrosshair;
+	Texture textureCrosshair = TextureHolder::GetTexture("graphics/crosshair.png");
+	spriteCrosshair.setTexture(textureCrosshair);
+	spriteCrosshair.setOrigin(25, 25);
+
+	// Create a couple of pickups
+	Pickup healthPickup(1);
+	Pickup ammoPickup(2);
+
 	// The main loop
 	while (window.isOpen())
 	{
@@ -100,7 +125,26 @@ int main()
 
 				if (state == State::PLAYING)
 				{
-
+					// Reloading
+					if (event.key.code == Keyboard::R)
+					{
+						if (bulletsSpare >= clipSize)
+						{
+							// Plenty of bullets. Reload
+							bulletsInClip = clipSize;
+							bulletsSpare -= clipSize;
+						}
+						else if (bulletsSpare > 0)
+						{
+							// Only a few bullets left
+							bulletsInClip = bulletsSpare;
+							bulletsSpare = 0;
+						}
+						else
+						{
+							// todo 
+						}
+					}
 				}
 
 			}
@@ -153,6 +197,28 @@ int main()
 				player.stopRight();
 			}
 
+			// Fire a bullet
+			if (Mouse::isButtonPressed(sf::Mouse::Left))
+			{
+				if (gameTimeTotal.asMilliseconds() - lastPressed.asMilliseconds()
+					> 1000 / fireRate && bulletsInClip > 0)
+				{
+					// Pass center of player and center of cross-hair to shoot()
+					bullets[currentBullet].shoot(player.getCenter().x
+						, player.getCenter().y, mouseWorldPosition.x
+						, mouseWorldPosition.y);
+
+					currentBullet++;
+					if (currentBullet > 99)
+					{
+						currentBullet = 0;
+					}
+
+					lastPressed = gameTimeTotal;
+					bulletsInClip--;
+				}
+			}// End fire a bullet
+
 		}// End WASD while playing
 
 		// Handle the LEVELING up state
@@ -204,6 +270,10 @@ int main()
 				// Spawn the player in the middle of the arena
 				player.spawn(arena, resolution, tileSize);
 
+				// Configure the pickups
+				healthPickup.setArena(arena);
+				ammoPickup.setArena(arena);
+
 				// Create a horde of zombies
 				numZombies = 10;
 
@@ -244,6 +314,9 @@ int main()
 			mouseWorldPosition = window.mapPixelToCoords(Mouse::getPosition()
 				, mainView);
 
+			// Set the cross-hair to the mouse world location
+			spriteCrosshair.setPosition(mouseWorldPosition);
+
 			// Update the player
 			player.update(dtAsSeconds, Mouse::getPosition());
 
@@ -261,6 +334,19 @@ int main()
 					zombies[i].update(dt.asSeconds(), playerPosition);
 				}
 			}
+
+			// Update any bullets that are in-flight
+			for (int i = 0; i < 100; i++)
+			{
+				if (bullets[i].isInFlight())
+				{
+					bullets[i].update(dtAsSeconds);
+				}
+			}
+
+			// Update the pickups
+			healthPickup.update(dtAsSeconds);
+			ammoPickup.update(dtAsSeconds);
 
 		}// End updating the scene
 
@@ -286,8 +372,31 @@ int main()
 				window.draw(zombies[i].getSprite());
 			}
 
+			// Draw bullets
+			for (int i = 0; i < 100; i++)
+			{
+				if (bullets[i].isInFlight())
+				{
+					window.draw(bullets[i].getShape());
+				}
+			}
+
 			// Draw the player
 			window.draw(player.getSprite());
+
+			// Draw pickups if spawned
+			if (ammoPickup.isSpawned())
+			{
+				window.draw(ammoPickup.getSprite());
+			}
+
+			if (healthPickup.isSpawned())
+			{
+				window.draw(healthPickup.getSprite());
+			}
+
+			// Draw teh cross-hair
+			window.draw(spriteCrosshair); 
 		}
 
 		if (state == State::LEVELING_UP)

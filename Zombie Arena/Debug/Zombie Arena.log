@@ -1,10 +1,31 @@
-﻿  CreateHorde.cpp
-C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateHorde.cpp(25,8): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateHorde.cpp(26,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateHorde.cpp(32,8): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateHorde.cpp(33,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateHorde.cpp(39,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateHorde.cpp(40,8): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateHorde.cpp(46,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateHorde.cpp(47,8): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-  Zombie Arena.vcxproj -> C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Debug\Zombie Arena.exe
+﻿  Pickup.cpp
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Pickup.h(35,16): error C4596: '{ctor}': illegal qualified name in member declaration
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Pickup.cpp(28,20): warning C4244: '=': conversion from 'const int' to 'float', possible loss of data
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Pickup.cpp(29,20): warning C4244: '=': conversion from 'const int' to 'float', possible loss of data
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Pickup.cpp(55,26): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Pickup.cpp(55,23): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Pickup.cpp(112,34): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Pickup.cpp(116,32): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+  Zombie Arena.cpp
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Pickup.h(35,16): error C4596: '{ctor}': illegal qualified name in member declaration
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Zombie Arena.cpp(25,44): warning C4244: '=': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Zombie Arena.cpp(26,44): warning C4244: '=': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Zombie Arena.cpp(27,56): warning C4244: 'argument': conversion from 'T' to 'unsigned int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Zombie Arena.cpp(27,42): warning C4244: 'argument': conversion from 'T' to 'unsigned int', possible loss of data
+          with
+          [
+              T=float
+          ]
+  Generating Code...
