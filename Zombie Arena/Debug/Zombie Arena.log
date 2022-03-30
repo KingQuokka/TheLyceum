@@ -1,62 +1,10 @@
-﻿  CreateBackground.cpp
-C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateBackground.cpp(31,23): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateBackground.cpp(31,8): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateBackground.cpp(33,37): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateBackground.cpp(33,22): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateBackground.cpp(35,51): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateBackground.cpp(35,22): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateBackground.cpp(37,39): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateBackground.cpp(37,9): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateBackground.cpp(61,12): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateBackground.cpp(63,20): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateBackground.cpp(65,28): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateBackground.cpp(67,20): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
+﻿  CreateHorde.cpp
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateHorde.cpp(25,8): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateHorde.cpp(26,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateHorde.cpp(32,8): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateHorde.cpp(33,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateHorde.cpp(39,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateHorde.cpp(40,8): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateHorde.cpp(46,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateHorde.cpp(47,8): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
   Zombie Arena.vcxproj -> C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Debug\Zombie Arena.exe
