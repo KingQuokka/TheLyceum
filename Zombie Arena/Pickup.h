@@ -32,7 +32,7 @@ private:
 	float m_SecondsToLive;
 	float m_SecondsToWait;
 public:
-	Pickup::Pickup(int type);
+	Pickup(int type);
 
 	// Prepare a new pickup
 	void setArena(IntRect arena);
