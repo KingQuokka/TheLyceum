@@ -1,23 +1,28 @@
 ﻿  Zombie Arena.cpp
-C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Zombie Arena.cpp(25,44): warning C4244: '=': conversion from 'unsigned int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
 C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Zombie Arena.cpp(26,44): warning C4244: '=': conversion from 'unsigned int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Zombie Arena.cpp(27,56): warning C4244: 'argument': conversion from 'T' to 'unsigned int', possible loss of data
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Zombie Arena.cpp(27,44): warning C4244: '=': conversion from 'unsigned int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Zombie Arena.cpp(27,42): warning C4244: 'argument': conversion from 'T' to 'unsigned int', possible loss of data
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Zombie Arena.cpp(28,56): warning C4244: 'argument': conversion from 'T' to 'unsigned int', possible loss of data
           with
           [
               T=float
           ]
-C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Zombie Arena.cpp(385,16): warning C4553: '==': result of expression not used; did you intend '='?
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Zombie Arena.cpp(28,42): warning C4244: 'argument': conversion from 'T' to 'unsigned int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Zombie Arena.cpp(492,16): warning C4553: '==': result of expression not used; did you intend '='?
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Zombie Arena.cpp(533,50): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
   Zombie Arena.vcxproj -> C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Debug\Zombie Arena.exe
