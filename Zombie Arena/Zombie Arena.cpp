@@ -31,6 +31,7 @@ int main()
 	RenderWindow window(VideoMode(resolution.x, resolution.y)
 		, "Zombie Arena", Style::Fullscreen);
 
+
 	// Create an SFML view for the main action
 	View mainView(sf::FloatRect(0, 0
 		, resolution.x, resolution.y));
@@ -458,6 +459,8 @@ int main()
 			if (state == State::PLAYING)
 			{
 				// Increase the wave number
+				wave++;
+
 				// Prepare the level				
 				arena.width	 = 500 * wave;
 				arena.height = 500 * wave;
@@ -570,18 +573,19 @@ int main()
 							if (zombies[j].hit())
 							{
 								// hit and kill
-								score = +10;
+								score += 10;
 
 								if (score >= hiScore)
 								{
 									hiScore = score;
 								}
+
 								numZombiesAlive--;
 
 								// When all the zombies are dead
 								if (numZombiesAlive == 0)
 								{
-									state == State::LEVELING_UP;
+									state = State::LEVELING_UP;
 								}
 							}
 
