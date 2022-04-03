@@ -173,13 +173,13 @@ void Player::update(float elapsedTime, Vector2i mousePosition)
 void Player::upgradeSpeed()
 {
 	// 20% speed upgrade
-	m_Speed = +(START_SPEED * 0.2);
+	m_Speed += (START_SPEED * 0.2);
 }
 
 void Player::upgradeHealth()
 {
 	// 20% max health upgrade
-	m_MaxHealth = +(START_HEALTH * 0.2);
+	m_MaxHealth += (START_HEALTH * 0.2);
 }
 
 void Player::increaseHealthLevel(int amount)

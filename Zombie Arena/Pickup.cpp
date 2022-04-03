@@ -82,11 +82,11 @@ void Pickup::update(float elapsedTime)
 {
 	if (m_Spawned)
 	{
-		m_SecondsSinceSpawned = +elapsedTime;
+		m_SecondsSinceSpawned += elapsedTime;
 	}
 	else
 	{
-		m_SecondsSinceDeSpawned = +elapsedTime;
+		m_SecondsSinceDeSpawned += elapsedTime;
 	}
 
 	// Do we need to hide a pickup
