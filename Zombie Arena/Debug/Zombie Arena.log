@@ -19,7 +19,7 @@ C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Zombie Arena.cpp(31,42): warning C
           [
               T=float
           ]
-C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Zombie Arena.cpp(639,50): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Zombie Arena.cpp(638,50): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
