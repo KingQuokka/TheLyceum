@@ -1,0 +1,222 @@
+﻿  Bullet.cpp
+  CreateBackground.cpp
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateBackground.cpp(31,23): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateBackground.cpp(31,8): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateBackground.cpp(33,37): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateBackground.cpp(33,22): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateBackground.cpp(35,51): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateBackground.cpp(35,22): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateBackground.cpp(37,39): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateBackground.cpp(37,9): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateBackground.cpp(61,12): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateBackground.cpp(63,20): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateBackground.cpp(65,28): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateBackground.cpp(67,20): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  CreateHorde.cpp
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateHorde.cpp(25,8): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateHorde.cpp(26,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateHorde.cpp(32,8): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateHorde.cpp(33,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateHorde.cpp(39,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateHorde.cpp(40,8): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateHorde.cpp(46,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\CreateHorde.cpp(47,8): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  Pickup.cpp
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Pickup.cpp(28,20): warning C4244: '=': conversion from 'const int' to 'float', possible loss of data
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Pickup.cpp(29,20): warning C4244: '=': conversion from 'const int' to 'float', possible loss of data
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Pickup.cpp(55,26): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Pickup.cpp(55,23): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Pickup.cpp(112,34): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Pickup.cpp(116,32): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+  Player.cpp
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Player.cpp(6,15): warning C4244: '=': conversion from 'const float' to 'int', possible loss of data
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Player.cpp(7,18): warning C4244: '=': conversion from 'const float' to 'int', possible loss of data
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Player.cpp(20,31): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Player.cpp(21,32): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Player.cpp(40,16): warning C4244: '=': conversion from 'const float' to 'int', possible loss of data
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Player.cpp(41,19): warning C4244: '=': conversion from 'const float' to 'int', possible loss of data
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Player.cpp(152,32): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Player.cpp(156,31): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Player.cpp(160,33): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Player.cpp(164,30): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Player.cpp(168,14): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Player.cpp(176,26): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Player.cpp(182,31): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+  TextureHolder.cpp
+  Zombie Arena.cpp
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Zombie Arena.cpp(28,44): warning C4244: '=': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Zombie Arena.cpp(29,44): warning C4244: '=': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Zombie Arena.cpp(31,56): warning C4244: 'argument': conversion from 'T' to 'unsigned int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Zombie Arena.cpp(31,42): warning C4244: 'argument': conversion from 'T' to 'unsigned int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Zombie Arena.cpp(638,50): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  Zombie.cpp
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Zombie.cpp(46,17): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Zombie.cpp(124,14): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Bullet.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Transformable::setPosition(class sf::Vector2<float> const &)" (__imp_?setPosition@Transformable@sf@@QAEXABV?$Vector2@M@2@@Z)
+Bullet.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: class sf::Rect<float> __thiscall sf::Shape::getGlobalBounds(void)const " (__imp_?getGlobalBounds@Shape@sf@@QBE?AV?$Rect@M@2@XZ)
+Bullet.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::RectangleShape::setSize(class sf::Vector2<float> const &)" (__imp_?setSize@RectangleShape@sf@@QAEXABV?$Vector2@M@2@@Z)
+Bullet.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::RectangleShape::RectangleShape(class sf::Vector2<float> const &)" (__imp_??0RectangleShape@sf@@QAE@ABV?$Vector2@M@1@@Z)
+Bullet.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::RectangleShape::RectangleShape(class sf::RectangleShape const &)" (__imp_??0RectangleShape@sf@@QAE@ABV01@@Z)
+Bullet.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::RectangleShape::~RectangleShape(void)" (__imp_??1RectangleShape@sf@@UAE@XZ)
+CreateBackground.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::VertexArray::setPrimitiveType(enum sf::PrimitiveType)" (__imp_?setPrimitiveType@VertexArray@sf@@QAEXW4PrimitiveType@2@@Z)
+CreateBackground.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::VertexArray::resize(unsigned int)" (__imp_?resize@VertexArray@sf@@QAEXI@Z)
+CreateBackground.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: class sf::Vertex & __thiscall sf::VertexArray::operator[](unsigned int)" (__imp_??AVertexArray@sf@@QAEAAVVertex@1@I@Z)
+CreateHorde.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Sprite::Sprite(void)" (__imp_??0Sprite@sf@@QAE@XZ)
+CreateHorde.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::Sprite::~Sprite(void)" (__imp_??1Sprite@sf@@UAE@XZ)
+Pickup.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Transformable::setOrigin(float,float)" (__imp_?setOrigin@Transformable@sf@@QAEXMM@Z)
+Pickup.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Transformable::setPosition(float,float)" (__imp_?setPosition@Transformable@sf@@QAEXMM@Z)
+Pickup.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: class sf::Rect<float> __thiscall sf::Sprite::getGlobalBounds(void)const " (__imp_?getGlobalBounds@Sprite@sf@@QBE?AV?$Rect@M@2@XZ)
+Pickup.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Sprite::Sprite(class sf::Texture const &)" (__imp_??0Sprite@sf@@QAE@ABVTexture@1@@Z)
+Pickup.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Sprite::Sprite(class sf::Sprite const &)" (__imp_??0Sprite@sf@@QAE@ABV01@@Z)
+Pickup.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: class sf::Sprite & __thiscall sf::Sprite::operator=(class sf::Sprite &&)" (__imp_??4Sprite@sf@@QAEAAV01@$$QAV01@@Z)
+Player.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: int __thiscall sf::Time::asMilliseconds(void)const " (__imp_?asMilliseconds@Time@sf@@QBEHXZ)
+Player.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Time::Time(void)" (__imp_??0Time@sf@@QAE@XZ)
+Player.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: float __thiscall sf::Transformable::getRotation(void)const " (__imp_?getRotation@Transformable@sf@@QBEMXZ)
+Player.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Transformable::setRotation(float)" (__imp_?setRotation@Transformable@sf@@QAEXM@Z)
+Player.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: bool __thiscall sf::Texture::loadFromFile(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class sf::Rect<int> const &)" (__imp_?loadFromFile@Texture@sf@@QAE_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV?$Rect@H@2@@Z)
+Player.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Texture::~Texture(void)" (__imp_??1Texture@sf@@QAE@XZ)
+Player.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Texture::Texture(void)" (__imp_??0Texture@sf@@QAE@XZ)
+Player.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Sprite::setTexture(class sf::Texture const &,bool)" (__imp_?setTexture@Sprite@sf@@QAEXABVTexture@2@_N@Z)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) class sf::Time & __cdecl sf::operator+=(class sf::Time &,class sf::Time)" (__imp_??Ysf@@YAAAVTime@0@AAV10@V10@@Z)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: static class sf::RenderStates const sf::RenderStates::Default" (__imp_?Default@RenderStates@sf@@2V12@B)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: class sf::Time __thiscall sf::Clock::restart(void)" (__imp_?restart@Clock@sf@@QAE?AVTime@2@XZ)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Clock::Clock(void)" (__imp_??0Clock@sf@@QAE@XZ)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: static class sf::Color const sf::Color::White" (__imp_?White@Color@sf@@2V12@B)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: float __thiscall sf::Time::asSeconds(void)const " (__imp_?asSeconds@Time@sf@@QBEMXZ)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::View::setCenter(class sf::Vector2<float> const &)" (__imp_?setCenter@View@sf@@QAEXABV?$Vector2@M@2@@Z)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::View::View(class sf::Rect<float> const &)" (__imp_??0View@sf@@QAE@ABV?$Rect@M@1@@Z)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Texture::Texture(class sf::Texture const &)" (__imp_??0Texture@sf@@QAE@ABV01@@Z)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: bool __thiscall sf::Font::loadFromFile(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (__imp_?loadFromFile@Font@sf@@QAE_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Font::~Font(void)" (__imp_??1Font@sf@@QAE@XZ)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Font::Font(void)" (__imp_??0Font@sf@@QAE@XZ)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::RenderStates::RenderStates(class sf::Texture const *)" (__imp_??0RenderStates@sf@@QAE@PBVTexture@1@@Z)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::RenderWindow::~RenderWindow(void)" (__imp_??1RenderWindow@sf@@UAE@XZ)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::RenderWindow::RenderWindow(class sf::VideoMode,class sf::String const &,unsigned int,struct sf::ContextSettings const &)" (__imp_??0RenderWindow@sf@@QAE@VVideoMode@1@ABVString@1@IABUContextSettings@1@@Z)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Color::Color(unsigned char,unsigned char,unsigned char,unsigned char)" (__imp_??0Color@sf@@QAE@EEEE@Z)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: bool __thiscall sf::SoundBuffer::loadFromFile(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (__imp_?loadFromFile@SoundBuffer@sf@@QAE_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::SoundBuffer::~SoundBuffer(void)" (__imp_??1SoundBuffer@sf@@QAE@XZ)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::SoundBuffer::SoundBuffer(void)" (__imp_??0SoundBuffer@sf@@QAE@XZ)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::VertexArray::VertexArray(void)" (__imp_??0VertexArray@sf@@QAE@XZ)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: static class sf::Color const sf::Color::Red" (__imp_?Red@Color@sf@@2V12@B)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Sound::setBuffer(class sf::SoundBuffer const &)" (__imp_?setBuffer@Sound@sf@@QAEXABVSoundBuffer@2@@Z)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual void __thiscall sf::Sound::play(void)" (__imp_?play@Sound@sf@@UAEXXZ)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::Sound::~Sound(void)" (__imp_??1Sound@sf@@UAE@XZ)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Sound::Sound(void)" (__imp_??0Sound@sf@@QAE@XZ)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Window::display(void)" (__imp_?display@Window@sf@@QAEXXZ)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Window::setMouseCursorVisible(bool)" (__imp_?setMouseCursorVisible@Window@sf@@QAEX_N@Z)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: bool __thiscall sf::Window::pollEvent(class sf::Event &)" (__imp_?pollEvent@Window@sf@@QAE_NAAVEvent@2@@Z)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: bool __thiscall sf::Window::isOpen(void)const " (__imp_?isOpen@Window@sf@@QBE_NXZ)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Window::close(void)" (__imp_?close@Window@sf@@QAEXXZ)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::RenderTarget::draw(class sf::Drawable const &,class sf::RenderStates const &)" (__imp_?draw@RenderTarget@sf@@QAEXABVDrawable@2@ABVRenderStates@2@@Z)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: class sf::Vector2<float> __thiscall sf::RenderTarget::mapPixelToCoords(class sf::Vector2<int> const &,class sf::View const &)const " (__imp_?mapPixelToCoords@RenderTarget@sf@@QBE?AV?$Vector2@M@2@ABV?$Vector2@H@2@ABVView@2@@Z)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::RenderTarget::setView(class sf::View const &)" (__imp_?setView@RenderTarget@sf@@QAEXABVView@2@@Z)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::RenderTarget::clear(class sf::Color const &)" (__imp_?clear@RenderTarget@sf@@QAEXABVColor@2@@Z)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: static bool __cdecl sf::Keyboard::isKeyPressed(enum sf::Keyboard::Key)" (__imp_?isKeyPressed@Keyboard@sf@@SA_NW4Key@12@@Z)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Shape::setFillColor(class sf::Color const &)" (__imp_?setFillColor@Shape@sf@@QAEXABVColor@2@@Z)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::String::String(char const *,class std::locale const &)" (__imp_??0String@sf@@QAE@PBDABVlocale@std@@@Z)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::String::String(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class std::locale const &)" (__imp_??0String@sf@@QAE@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABVlocale@3@@Z)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: static class sf::VideoMode __cdecl sf::VideoMode::getDesktopMode(void)" (__imp_?getDesktopMode@VideoMode@sf@@SA?AV12@XZ)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::VideoMode::VideoMode(unsigned int,unsigned int,unsigned int)" (__imp_??0VideoMode@sf@@QAE@III@Z)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Text::setFillColor(class sf::Color const &)" (__imp_?setFillColor@Text@sf@@QAEXABVColor@2@@Z)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Text::setCharacterSize(unsigned int)" (__imp_?setCharacterSize@Text@sf@@QAEXI@Z)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Text::setFont(class sf::Font const &)" (__imp_?setFont@Text@sf@@QAEXABVFont@2@@Z)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Text::setString(class sf::String const &)" (__imp_?setString@Text@sf@@QAEXABVString@2@@Z)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Text::Text(void)" (__imp_??0Text@sf@@QAE@XZ)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: static class sf::Vector2<int> __cdecl sf::Mouse::getPosition(void)" (__imp_?getPosition@Mouse@sf@@SA?AV?$Vector2@H@2@XZ)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: static bool __cdecl sf::Mouse::isButtonPressed(enum sf::Mouse::Button)" (__imp_?isButtonPressed@Mouse@sf@@SA_NW4Button@12@@Z)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::Text::~Text(void)" (__imp_??1Text@sf@@UAE@XZ)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::VertexArray::~VertexArray(void)" (__imp_??1VertexArray@sf@@UAE@XZ)
+Zombie Arena.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::String::~String(void)" (__imp_??1String@sf@@QAE@XZ)
+C:\Users\Jonat\Desktop\TheLyceum\Zombie Arena\Release\Zombie Arena.exe : fatal error LNK1120: 75 unresolved externals
