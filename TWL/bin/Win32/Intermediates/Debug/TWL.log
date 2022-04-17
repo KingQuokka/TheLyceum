@@ -1,0 +1,28 @@
+﻿  Draw.cpp
+  Engine.cpp
+C:\dev\TheLyceum\TWL\Engine.cpp(7,44): warning C4244: '=': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\Engine.cpp(8,44): warning C4244: '=': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\Engine.cpp(9,52): warning C4244: 'argument': conversion from 'T' to 'unsigned int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\Engine.cpp(9,38): warning C4244: 'argument': conversion from 'T' to 'unsigned int', possible loss of data
+          with
+          [
+              T=float
+          ]
+  Input.cpp
+  TextureHolder.cpp
+  Main.cpp
+  Update.cpp
+  Generating Code...
+  TWL.vcxproj -> C:\dev\TheLyceum\TWL\bin\Win32\Debug\TWL.exe
