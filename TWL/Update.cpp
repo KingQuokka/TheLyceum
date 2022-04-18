@@ -7,9 +7,25 @@ using namespace sf;
 
 void Engine::update(float dtAsSeconds)
 {
+    if (m_NewLevelRequired)
+    {
+	    // This will move to new loadLevel() soon
+        // Spawn Thomas and Bob
+        m_Thomas.spawn(Vector2f(0, 0), GRAVITY);
+        m_Bob.spawn(Vector2f(100, 0), GRAVITY);
+
+        // Make sure spawn is called only once
+        m_TimeRemaining    = 10;
+        m_NewLevelRequired = false;
+    }
 
     if (m_Playing)
     {
+        // Update Thomas
+        m_Thomas.update(dtAsSeconds);
+
+        // Update Bob
+        m_Bob.update(dtAsSeconds);
 
         // Count down the time the player has left
         m_TimeRemaining -= dtAsSeconds;
@@ -21,4 +37,23 @@ void Engine::update(float dtAsSeconds)
             m_NewLevelRequired = true;
         }
     }// End if playing
+
+    // Set the appropriate view
+    if (m_SplitScreen)
+    {
+        m_LeftView.setCenter(m_Thomas.getCenter());
+        m_RightView.setCenter(m_Bob.getCenter());
+    }
+    else
+    {
+	    // Center full screen appropriately
+        if (m_Character1)
+        {
+            m_MainView.setCenter(m_Thomas.getCenter());
+        }
+        else
+        {
+            m_MainView.setCenter(m_Bob.getCenter());
+        }
+    }
 }

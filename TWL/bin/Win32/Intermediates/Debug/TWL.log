@@ -1,4 +1,5 @@
-﻿  Draw.cpp
+﻿  Bob.cpp
+  Draw.cpp
   Engine.cpp
 C:\dev\TheLyceum\TWL\Engine.cpp(7,44): warning C4244: '=': conversion from 'unsigned int' to 'T', possible loss of data
           with
@@ -21,8 +22,37 @@ C:\dev\TheLyceum\TWL\Engine.cpp(9,38): warning C4244: 'argument': conversion fro
               T=float
           ]
   Input.cpp
-  TextureHolder.cpp
   Main.cpp
+  PlayableCharacter.cpp
+C:\dev\TheLyceum\TWL\PlayableCharacter.cpp(60,24): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\PlayableCharacter.cpp(66,25): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\PlayableCharacter.cpp(68,28): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\PlayableCharacter.cpp(72,24): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\PlayableCharacter.cpp(74,27): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  Thomas.cpp
+C:\dev\TheLyceum\TWL\Thomas.cpp(10,22): warning C4305: '=': truncation from 'double' to 'float'
   Update.cpp
+C:\dev\TheLyceum\TWL\Update.cpp(14,40): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
+C:\dev\TheLyceum\TWL\Update.cpp(15,39): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
   Generating Code...
   TWL.vcxproj -> C:\dev\TheLyceum\TWL\bin\Win32\Debug\TWL.exe
