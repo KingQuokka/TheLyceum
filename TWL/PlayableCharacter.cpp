@@ -1,10 +1,10 @@
 #include "PlayableCharacter.h"
 
-void PlayableCharacter::spawn(Vector2f startPostition, float gravity)
+void PlayableCharacter::spawn(Vector2f startPosition, float gravity)
 {
-	m_Position.x = startPostition.x; // Place the player at the starting point
-	m_Position.y = startPostition.y;
-	m_Gravity	 = gravity;			 // Initialize gravity
+	m_Position.x = startPosition.x; // Place the player at the starting point
+	m_Position.y = startPosition.y;
+	m_Gravity	 = gravity;			// Initialize gravity
 
 	// Move teh sprite into position
 	m_Sprite.setPosition(m_Position);

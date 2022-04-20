@@ -1,12 +1,10 @@
 #include "Bob.h"
-
 #include "TextureHolder.h"
 
 Bob::Bob()
 {
 	// Associate a texture with the sprite
-	m_Sprite = Sprite(TextureHolder::GetTexture
-		("graphics/bob.png"));
+	m_Sprite = Sprite(TextureHolder::GetTexture("graphics/bob.png"));
 
 	m_JumpDuration = .25;
 }
@@ -45,7 +43,7 @@ bool Bob::handleInput()
 
 	if (Keyboard::isKeyPressed(Keyboard::Right))
 	{
-		m_RightPressed = true;;
+		m_RightPressed = true;
 	}
 
 	else

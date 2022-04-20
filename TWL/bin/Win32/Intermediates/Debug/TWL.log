@@ -59,6 +59,34 @@ C:\dev\TheLyceum\TWL\Engine.cpp(9,38): warning C4244: 'argument': conversion fro
 C:\dev\TheLyceum\TWL\LoadLevel.cpp(23,42): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
 C:\dev\TheLyceum\TWL\LoadLevel.cpp(24,39): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
   Main.cpp
+  PlayableCharacter.cpp
+C:\dev\TheLyceum\TWL\PlayableCharacter.cpp(60,24): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\PlayableCharacter.cpp(66,25): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\PlayableCharacter.cpp(68,28): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\PlayableCharacter.cpp(72,24): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\PlayableCharacter.cpp(74,27): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  Thomas.cpp
+C:\dev\TheLyceum\TWL\Thomas.cpp(10,22): warning C4305: '=': truncation from 'double' to 'float'
   Update.cpp
   Generating Code...
   TWL.vcxproj -> C:\dev\TheLyceum\TWL\bin\Win32\Debug\TWL.exe

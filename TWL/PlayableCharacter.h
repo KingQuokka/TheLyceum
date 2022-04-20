@@ -30,7 +30,7 @@ private:
 
 public:
 
-	void spawn(Vector2f startPostition, float gravity);
+	void spawn(Vector2f startPosition, float gravity);
 
 	// This is a pure virtual function
 	bool virtual handleInput() = 0;
