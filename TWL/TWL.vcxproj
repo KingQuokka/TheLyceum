@@ -164,10 +164,13 @@
     <ClCompile Include="DetectCollisions.cpp" />
     <ClCompile Include="Draw.cpp" />
     <ClCompile Include="Engine.cpp" />
+    <ClCompile Include="HUD.cpp" />
     <ClCompile Include="Input.cpp" />
     <ClCompile Include="LevelManager.cpp" />
     <ClCompile Include="LoadLevel.cpp" />
     <ClCompile Include="PlayableCharacter.cpp" />
+    <ClCompile Include="PopulateEmitters.cpp" />
+    <ClCompile Include="SoundManger.cpp" />
     <ClCompile Include="TextureHolder.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Thomas.cpp" />
@@ -176,8 +179,10 @@
   <ItemGroup>
     <ClInclude Include="Bob.h" />
     <ClInclude Include="Engine.h" />
+    <ClInclude Include="HUD.h" />
     <ClInclude Include="LevelManager.h" />
     <ClInclude Include="PlayableCharacter.h" />
+    <ClInclude Include="SoundManager.h" />
     <ClInclude Include="TextureHolder.h" />
     <ClInclude Include="Thomas.h" />
   </ItemGroup>

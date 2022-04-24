@@ -28,6 +28,7 @@ void Engine::update(float dtAsSeconds)
 			m_NewLevelRequired = true;
 
 			// Play the reached goal sound
+			m_SM.playReachGoal();
 		}
 
 		else
@@ -57,6 +58,27 @@ void Engine::update(float dtAsSeconds)
 		}
 	}// End if playing
 
+	// Check if a fire sound needs to be played
+	vector<Vector2f>::iterator it;
+
+	// Iterate through the vector of Vector2f objects
+	for (it = m_FireEmitters.begin(); it != m_FireEmitters.end(); it++)
+	{
+		// Where is this emitter and store the location in pos
+		float posX = (*it).x;
+		float posY = (*it).y;
+
+		// Is the emitter near the player? Make 500 pixel rect around emitter
+		FloatRect localRect(posX - 250, posY - 250, 500, 500);
+
+		// Is the player inside localRect?
+		if (m_Thomas.getPosition().intersects(localRect))
+		{
+			// Play sound and pass location
+			m_SM.playFire(Vector2f(posX, posY), m_Thomas.getCenter());
+		}
+	}
+
 	// Set the appropriate view
 	if (m_SplitScreen)
 	{
@@ -74,5 +96,26 @@ void Engine::update(float dtAsSeconds)
 		{
 			m_MainView.setCenter(m_Bob.getCenter());
 		}
+	}
+
+	// Update the HUD. Increment number of frames since last HUD calculation
+	m_FramesSinceLastHUDUpdate++;
+
+	// Update the HUD every m_TargetFramesPerHUDUpdate frames
+	if (m_FramesSinceLastHUDUpdate > m_TargetFramesPerHUDUpdate)
+	{
+		// Update game HUD text
+		stringstream ssTime;
+		stringstream ssLevel;
+
+		// Update the time text
+		ssTime << (int)m_TimeRemaining;
+		m_Hud.setTime(ssTime.str());
+
+		// Update the level text
+		ssLevel << "Level:" << m_LM.getCurrentLevel();
+		m_Hud.setLevel(ssLevel.str());
+
+		m_FramesSinceLastHUDUpdate = 0;
 	}
 }
