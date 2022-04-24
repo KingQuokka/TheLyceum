@@ -7,6 +7,7 @@
 #include "LevelManager.h"
 #include "SoundManager.h"
 #include "HUD.h"
+#include "ParticleSystem.h"
 
 using namespace sf;
 
@@ -16,6 +17,9 @@ private:
 
     // The texture holder
     TextureHolder th;
+
+    // Create particle system
+    ParticleSystem m_PS;
 
     // Thomas and Bob
     Thomas    m_Thomas;
@@ -52,7 +56,8 @@ private:
 
     // Declare a sprite and a Texture for the background
     Sprite  m_BackgroundSprite;
-    Texture m_BackgroundTexture;       
+    Texture m_BackgroundTexture;
+    Shader  m_RippleShader;               // Declare shader for background
     bool    m_Playing            = false; // Is game playing?
     bool    m_Character1         = true;  // Is char 1 or 2 the focus 
     bool    m_SplitScreen        = false; // Start full screen not split

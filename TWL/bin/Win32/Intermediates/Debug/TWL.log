@@ -1,1 +1,115 @@
-﻿  TWL.vcxproj -> C:\dev\TheLyceum\TWL\bin\Win32\Debug\TWL.exe
+﻿  DetectCollisions.cpp
+C:\dev\TheLyceum\TWL\DetectCollisions.cpp(13,17): warning C4244: '=': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\DetectCollisions.cpp(14,17): warning C4244: '=': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\DetectCollisions.cpp(37,25): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\DetectCollisions.cpp(36,46): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\DetectCollisions.cpp(42,44): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
+C:\dev\TheLyceum\TWL\DetectCollisions.cpp(51,19): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\DetectCollisions.cpp(52,19): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\DetectCollisions.cpp(60,47): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
+  Draw.cpp
+  Engine.cpp
+C:\dev\TheLyceum\TWL\Engine.cpp(7,44): warning C4244: '=': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\Engine.cpp(8,44): warning C4244: '=': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\Engine.cpp(9,52): warning C4244: 'argument': conversion from 'T' to 'unsigned int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\Engine.cpp(9,38): warning C4244: 'argument': conversion from 'T' to 'unsigned int', possible loss of data
+          with
+          [
+              T=float
+          ]
+  Input.cpp
+  LoadLevel.cpp
+C:\dev\TheLyceum\TWL\LoadLevel.cpp(26,42): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
+C:\dev\TheLyceum\TWL\LoadLevel.cpp(27,39): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
+  Main.cpp
+  PopulateEmitters.cpp
+C:\dev\TheLyceum\TWL\PopulateEmitters.cpp(9,22): warning C4834: discarding return value of function with 'nodiscard' attribute
+C:\dev\TheLyceum\TWL\PopulateEmitters.cpp(23,17): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\PopulateEmitters.cpp(23,7): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\PopulateEmitters.cpp(22,36): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\PopulateEmitters.cpp(22,22): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\PopulateEmitters.cpp(26,57): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\PopulateEmitters.cpp(26,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\PopulateEmitters.cpp(31,33): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\PopulateEmitters.cpp(32,33): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\PopulateEmitters.cpp(33,41): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\PopulateEmitters.cpp(34,41): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  Update.cpp
+  Generating Code...
+  TWL.vcxproj -> C:\dev\TheLyceum\TWL\bin\Win32\Debug\TWL.exe
