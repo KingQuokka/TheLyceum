@@ -1,0 +1,312 @@
+﻿  Bob.cpp
+  DetectCollisions.cpp
+C:\dev\TheLyceum\TWL\DetectCollisions.cpp(13,17): warning C4244: '=': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\DetectCollisions.cpp(14,17): warning C4244: '=': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\DetectCollisions.cpp(37,25): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\DetectCollisions.cpp(36,46): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\DetectCollisions.cpp(42,44): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
+C:\dev\TheLyceum\TWL\DetectCollisions.cpp(51,19): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\DetectCollisions.cpp(52,19): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\DetectCollisions.cpp(60,47): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
+  Draw.cpp
+  Engine.cpp
+C:\dev\TheLyceum\TWL\Engine.cpp(7,44): warning C4244: '=': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\Engine.cpp(8,44): warning C4244: '=': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\Engine.cpp(9,52): warning C4244: 'argument': conversion from 'T' to 'unsigned int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\Engine.cpp(9,38): warning C4244: 'argument': conversion from 'T' to 'unsigned int', possible loss of data
+          with
+          [
+              T=float
+          ]
+  HUD.cpp
+C:\dev\TheLyceum\TWL\HUD.cpp(30,38): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+  Input.cpp
+  LevelManager.cpp
+C:\dev\TheLyceum\TWL\LevelManager.cpp(75,28): warning C4267: '=': conversion from 'size_t' to 'T', possible loss of data
+          with
+          [
+              T=int
+          ]
+C:\dev\TheLyceum\TWL\LevelManager.cpp(124,31): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\LevelManager.cpp(124,16): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\LevelManager.cpp(127,45): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\LevelManager.cpp(127,30): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\LevelManager.cpp(131,22): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\LevelManager.cpp(130,30): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\LevelManager.cpp(134,46): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\LevelManager.cpp(134,17): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\LevelManager.cpp(140,19): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\LevelManager.cpp(143,27): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\LevelManager.cpp(143,14): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\LevelManager.cpp(146,35): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\LevelManager.cpp(146,14): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\LevelManager.cpp(149,27): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  LoadLevel.cpp
+C:\dev\TheLyceum\TWL\LoadLevel.cpp(26,42): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
+C:\dev\TheLyceum\TWL\LoadLevel.cpp(27,39): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
+  Particle.cpp
+  ParticleSystem.cpp
+C:\dev\TheLyceum\TWL\ParticleSystem.cpp(15,23): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  PlayableCharacter.cpp
+C:\dev\TheLyceum\TWL\PlayableCharacter.cpp(60,24): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\PlayableCharacter.cpp(66,25): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\PlayableCharacter.cpp(68,28): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\PlayableCharacter.cpp(72,24): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\PlayableCharacter.cpp(74,27): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  PopulateEmitters.cpp
+C:\dev\TheLyceum\TWL\PopulateEmitters.cpp(9,22): warning C4834: discarding return value of function with 'nodiscard' attribute
+C:\dev\TheLyceum\TWL\PopulateEmitters.cpp(23,17): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\PopulateEmitters.cpp(23,7): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\PopulateEmitters.cpp(22,36): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\PopulateEmitters.cpp(22,22): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\PopulateEmitters.cpp(26,57): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\PopulateEmitters.cpp(26,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\PopulateEmitters.cpp(31,33): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\PopulateEmitters.cpp(32,33): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\PopulateEmitters.cpp(33,41): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\dev\TheLyceum\TWL\PopulateEmitters.cpp(34,41): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  SoundManger.cpp
+  TextureHolder.cpp
+  Main.cpp
+  Thomas.cpp
+C:\dev\TheLyceum\TWL\Thomas.cpp(10,22): warning C4305: '=': truncation from 'double' to 'float'
+  Update.cpp
+Bob.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl sf::Texture::~Texture(void)" (__imp_??1Texture@sf@@QEAA@XZ)
+Bob.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl sf::Texture::Texture(void)" (__imp_??0Texture@sf@@QEAA@XZ)
+Bob.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: static bool __cdecl sf::Keyboard::isKeyPressed(enum sf::Keyboard::Key)" (__imp_?isKeyPressed@Keyboard@sf@@SA_NW4Key@12@@Z)
+Bob.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl sf::Sprite::Sprite(void)" (__imp_??0Sprite@sf@@QEAA@XZ)
+Bob.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl sf::Sprite::Sprite(class sf::Texture const &)" (__imp_??0Sprite@sf@@QEAA@AEBVTexture@1@@Z)
+Bob.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: class sf::Sprite & __cdecl sf::Sprite::operator=(class sf::Sprite &&)" (__imp_??4Sprite@sf@@QEAAAEAV01@$$QEAV01@@Z)
+Bob.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual __cdecl sf::Sprite::~Sprite(void)" (__imp_??1Sprite@sf@@UEAA@XZ)
+Draw.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: static class sf::RenderStates const sf::RenderStates::Default" (__imp_?Default@RenderStates@sf@@2V12@B)
+Draw.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: static class sf::Color const sf::Color::White" (__imp_?White@Color@sf@@2V12@B)
+Draw.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: float __cdecl sf::Time::asSeconds(void)const " (__imp_?asSeconds@Time@sf@@QEBAMXZ)
+Draw.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl sf::RenderStates::RenderStates(class sf::Texture const *)" (__imp_??0RenderStates@sf@@QEAA@PEBVTexture@1@@Z)
+Draw.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl sf::RenderStates::RenderStates(class sf::Shader const *)" (__imp_??0RenderStates@sf@@QEAA@PEBVShader@1@@Z)
+Draw.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __cdecl sf::Shader::setUniform(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,float)" (__imp_?setUniform@Shader@sf@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@M@Z)
+Draw.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __cdecl sf::Window::display(void)" (__imp_?display@Window@sf@@QEAAXXZ)
+Draw.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __cdecl sf::RenderTarget::draw(class sf::Drawable const &,class sf::RenderStates const &)" (__imp_?draw@RenderTarget@sf@@QEAAXAEBVDrawable@2@AEBVRenderStates@2@@Z)
+Draw.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __cdecl sf::RenderTarget::setView(class sf::View const &)" (__imp_?setView@RenderTarget@sf@@QEAAXAEBVView@2@@Z)
+Draw.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __cdecl sf::RenderTarget::clear(class sf::Color const &)" (__imp_?clear@RenderTarget@sf@@QEAAXAEBVColor@2@@Z)
+    Hint on symbols that are defined and could potentially match:
+      "__declspec(dllimport) public: void __cdecl std::basic_ios<char,struct std::char_traits<char> >::clear(int,bool)" (__imp_?clear@?$basic_ios@DU?$char_traits@D@std@@@std@@QEAAXH_N@Z)
+Draw.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual __cdecl sf::Text::~Text(void)" (__imp_??1Text@sf@@UEAA@XZ)
+Engine.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) class sf::Time & __cdecl sf::operator+=(class sf::Time &,class sf::Time)" (__imp_??Ysf@@YAAEAVTime@0@AEAV10@V10@@Z)
+Engine.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: class sf::Time __cdecl sf::Clock::restart(void)" (__imp_?restart@Clock@sf@@QEAA?AVTime@2@XZ)
+Engine.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl sf::Clock::Clock(void)" (__imp_??0Clock@sf@@QEAA@XZ)
+Engine.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl sf::Time::Time(void)" (__imp_??0Time@sf@@QEAA@XZ)
+Engine.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __cdecl sf::View::reset(class sf::Rect<float> const &)" (__imp_?reset@View@sf@@QEAAXAEBV?$Rect@M@2@@Z)
+Engine.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __cdecl sf::View::setViewport(class sf::Rect<float> const &)" (__imp_?setViewport@View@sf@@QEAAXAEBV?$Rect@M@2@@Z)
+Engine.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __cdecl sf::View::setSize(class sf::Vector2<float> const &)" (__imp_?setSize@View@sf@@QEAAXAEBV?$Vector2@M@2@@Z)
+Engine.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl sf::View::View(void)" (__imp_??0View@sf@@QEAA@XZ)
+Engine.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: class sf::Texture & __cdecl sf::Texture::operator=(class sf::Texture const &)" (__imp_??4Texture@sf@@QEAAAEAV01@AEBV01@@Z)
+Engine.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl sf::Font::~Font(void)" (__imp_??1Font@sf@@QEAA@XZ)
+Engine.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: static bool __cdecl sf::Shader::isAvailable(void)" (__imp_?isAvailable@Shader@sf@@SA_NXZ)
+Engine.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: bool __cdecl sf::Shader::loadFromFile(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (__imp_?loadFromFile@Shader@sf@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z)
+Engine.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl sf::Shader::~Shader(void)" (__imp_??1Shader@sf@@QEAA@XZ)
+Engine.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl sf::Shader::Shader(void)" (__imp_??0Shader@sf@@QEAA@XZ)
+Engine.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual __cdecl sf::RenderWindow::~RenderWindow(void)" (__imp_??1RenderWindow@sf@@UEAA@XZ)
+Engine.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl sf::RenderWindow::RenderWindow(void)" (__imp_??0RenderWindow@sf@@QEAA@XZ)
+Engine.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl sf::SoundBuffer::~SoundBuffer(void)" (__imp_??1SoundBuffer@sf@@QEAA@XZ)
+Engine.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl sf::VertexArray::VertexArray(void)" (__imp_??0VertexArray@sf@@QEAA@XZ)
+Engine.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual __cdecl sf::Sound::~Sound(void)" (__imp_??1Sound@sf@@UEAA@XZ)
+Engine.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: bool __cdecl sf::Window::isOpen(void)const " (__imp_?isOpen@Window@sf@@QEBA_NXZ)
+Engine.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __cdecl sf::Window::close(void)" (__imp_?close@Window@sf@@QEAAXXZ)
+Engine.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __cdecl sf::Window::create(class sf::VideoMode,class sf::String const &,unsigned int,struct sf::ContextSettings const &)" (__imp_?create@Window@sf@@QEAAXVVideoMode@2@AEBVString@2@IAEBUContextSettings@2@@Z)
+Engine.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl sf::String::String(char const *,class std::locale const &)" (__imp_??0String@sf@@QEAA@PEBDAEBVlocale@std@@@Z)
+Engine.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: static class sf::VideoMode __cdecl sf::VideoMode::getDesktopMode(void)" (__imp_?getDesktopMode@VideoMode@sf@@SA?AV12@XZ)
+Engine.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl sf::VideoMode::VideoMode(unsigned int,unsigned int,unsigned int)" (__imp_??0VideoMode@sf@@QEAA@III@Z)
+Engine.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __cdecl sf::Sprite::setTexture(class sf::Texture const &,bool)" (__imp_?setTexture@Sprite@sf@@QEAAXAEBVTexture@2@_N@Z)
+Engine.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl sf::String::~String(void)" (__imp_??1String@sf@@QEAA@XZ)
+Engine.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual __cdecl sf::VertexArray::~VertexArray(void)" (__imp_??1VertexArray@sf@@UEAA@XZ)
+Engine.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl sf::Drawable::Drawable(void)" (__imp_??0Drawable@sf@@QEAA@XZ)
+Engine.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual __cdecl sf::Drawable::~Drawable(void)" (__imp_??1Drawable@sf@@UEAA@XZ)
+HUD.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __cdecl sf::Transformable::setOrigin(float,float)" (__imp_?setOrigin@Transformable@sf@@QEAAXMM@Z)
+HUD.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __cdecl sf::Transformable::setPosition(float,float)" (__imp_?setPosition@Transformable@sf@@QEAAXMM@Z)
+HUD.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: bool __cdecl sf::Font::loadFromFile(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (__imp_?loadFromFile@Font@sf@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+HUD.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl sf::Font::Font(void)" (__imp_??0Font@sf@@QEAA@XZ)
+HUD.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: class sf::Rect<float> __cdecl sf::Text::getLocalBounds(void)const " (__imp_?getLocalBounds@Text@sf@@QEBA?AV?$Rect@M@2@XZ)
+HUD.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __cdecl sf::Text::setFillColor(class sf::Color const &)" (__imp_?setFillColor@Text@sf@@QEAAXAEBVColor@2@@Z)
+HUD.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __cdecl sf::Text::setCharacterSize(unsigned int)" (__imp_?setCharacterSize@Text@sf@@QEAAXI@Z)
+HUD.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __cdecl sf::Text::setFont(class sf::Font const &)" (__imp_?setFont@Text@sf@@QEAAXAEBVFont@2@@Z)
+HUD.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __cdecl sf::Text::setString(class sf::String const &)" (__imp_?setString@Text@sf@@QEAAXAEBVString@2@@Z)
+HUD.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl sf::Text::Text(void)" (__imp_??0Text@sf@@QEAA@XZ)
+HUD.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl sf::Text::Text(class sf::Text const &)" (__imp_??0Text@sf@@QEAA@AEBV01@@Z)
+Input.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: bool __cdecl sf::Window::pollEvent(class sf::Event &)" (__imp_?pollEvent@Window@sf@@QEAA_NAEAVEvent@2@@Z)
+LevelManager.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __cdecl sf::VertexArray::setPrimitiveType(enum sf::PrimitiveType)" (__imp_?setPrimitiveType@VertexArray@sf@@QEAAXW4PrimitiveType@2@@Z)
+LevelManager.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __cdecl sf::VertexArray::resize(unsigned __int64)" (__imp_?resize@VertexArray@sf@@QEAAX_K@Z)
+LevelManager.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: class sf::Vertex & __cdecl sf::VertexArray::operator[](unsigned __int64)" (__imp_??AVertexArray@sf@@QEAAAEAVVertex@1@_K@Z)
+ParticleSystem.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: static class sf::Color const sf::Color::Yellow" (__imp_?Yellow@Color@sf@@2V12@B)
+PlayableCharacter.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __cdecl sf::Transformable::setPosition(class sf::Vector2<float> const &)" (__imp_?setPosition@Transformable@sf@@QEAAXAEBV?$Vector2@M@2@@Z)
+PlayableCharacter.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: class sf::Rect<float> __cdecl sf::Sprite::getGlobalBounds(void)const " (__imp_?getGlobalBounds@Sprite@sf@@QEBA?AV?$Rect@M@2@XZ)
+PlayableCharacter.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl sf::Sprite::Sprite(class sf::Sprite const &)" (__imp_??0Sprite@sf@@QEAA@AEBV01@@Z)
+SoundManger.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __cdecl sf::SoundSource::setAttenuation(float)" (__imp_?setAttenuation@SoundSource@sf@@QEAAXM@Z)
+SoundManger.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __cdecl sf::SoundSource::setMinDistance(float)" (__imp_?setMinDistance@SoundSource@sf@@QEAAXM@Z)
+SoundManger.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __cdecl sf::SoundSource::setRelativeToListener(bool)" (__imp_?setRelativeToListener@SoundSource@sf@@QEAAX_N@Z)
+SoundManger.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __cdecl sf::SoundSource::setPosition(float,float,float)" (__imp_?setPosition@SoundSource@sf@@QEAAXMMM@Z)
+SoundManger.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: bool __cdecl sf::SoundBuffer::loadFromFile(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (__imp_?loadFromFile@SoundBuffer@sf@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+SoundManger.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl sf::SoundBuffer::SoundBuffer(void)" (__imp_??0SoundBuffer@sf@@QEAA@XZ)
+SoundManger.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __cdecl sf::Sound::setLoop(bool)" (__imp_?setLoop@Sound@sf@@QEAAX_N@Z)
+SoundManger.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __cdecl sf::Sound::setBuffer(class sf::SoundBuffer const &)" (__imp_?setBuffer@Sound@sf@@QEAAXAEBVSoundBuffer@2@@Z)
+SoundManger.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl sf::Sound::Sound(void)" (__imp_??0Sound@sf@@QEAA@XZ)
+SoundManger.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: static void __cdecl sf::Listener::setPosition(float,float,float)" (__imp_?setPosition@Listener@sf@@SAXMMM@Z)
+TextureHolder.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: bool __cdecl sf::Texture::loadFromFile(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class sf::Rect<int> const &)" (__imp_?loadFromFile@Texture@sf@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV?$Rect@H@2@@Z)
+Update.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __cdecl sf::View::setCenter(class sf::Vector2<float> const &)" (__imp_?setCenter@View@sf@@QEAAXAEBV?$Vector2@M@2@@Z)
+Update.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl sf::String::String(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class std::locale const &)" (__imp_??0String@sf@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBVlocale@3@@Z)
+C:\dev\TheLyceum\TWL\bin\x64\Release\TWL.exe : fatal error LNK1120: 80 unresolved externals
